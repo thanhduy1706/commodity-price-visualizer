@@ -1,28 +1,28 @@
 # --- Build Stage ---
-FROM oven/bun:1-alpine AS builder
+FROM node:20-alpine AS builder
 
 # Accept build-time arguments
 ARG NODE_ENV
 
 # Convert build args to environment variables
 ENV NODE_ENV=$NODE_ENV
-ENV HOSTNAME="0.0.0.0"
 
 WORKDIR /app
 
-COPY package.json bun.lock* ./
+COPY package.json yarn.lock* ./
 
-RUN bun install
+# Enable corepack for modern yarn
+RUN corepack enable && corepack prepare yarn@stable --activate
 
+RUN yarn install --immutable
 
 COPY . .
 
-RUN bun run build --webpack
+RUN yarn build
 
 # --- Production Stage ---
-FROM oven/bun:1-alpine AS runner
+FROM node:20-alpine AS runner
 ARG NODE_ENV
-ENV HOSTNAME="0.0.0.0"
 
 WORKDIR /app
 
@@ -33,4 +33,4 @@ COPY --from=builder /app/.next/static ./.next/static
 # Expose the port the app runs on
 EXPOSE 3000
 
-CMD ["bun", "server.js"]
+CMD ["node", "server.js"]
