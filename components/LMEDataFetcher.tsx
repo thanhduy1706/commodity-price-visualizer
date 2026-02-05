@@ -92,7 +92,7 @@ export default function LMEDataFetcher() {
     try {
       console.log("[Chart] Fetching all commodity data...")
 
-      const PYTHON_API = "http://localhost:8000"
+      const PYTHON_API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
 
       // Fetch all three sources in parallel
       const [copperRes, zincRes, oilRes] = await Promise.all([

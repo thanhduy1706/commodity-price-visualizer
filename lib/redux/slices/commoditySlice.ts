@@ -29,7 +29,7 @@ export const fetchFreshData = createAsyncThunk(
   'commodity/fetchFresh',
   async (_, { rejectWithValue }) => {
     try {
-      const PYTHON_API = "http://localhost:8000"
+      const PYTHON_API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
 
       // Fetch all three sources in parallel
       const [copperRes, zincRes, oilRes] = await Promise.all([
@@ -87,7 +87,7 @@ export const loadFromDatabase = createAsyncThunk(
   'commodity/loadFromDB',
   async (_: void, { rejectWithValue }) => {
     try {
-      const PYTHON_API = "http://localhost:8000"
+      const PYTHON_API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
       const startDate = '2023-01-01'
       const response = await fetch(`${PYTHON_API}/api/db/chart-data?start_date=${startDate}`)
 
