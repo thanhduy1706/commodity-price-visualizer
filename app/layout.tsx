@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 }
 
 import { Toaster } from "@/components/ui/sonner"
+import { ThemeProvider } from "@/components/theme-provider"
 
 export default function RootLayout({
   children,
@@ -15,12 +16,19 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className="antialiased bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
-        <ReduxProvider>
-          {children}
-          <Toaster />
-        </ReduxProvider>
+    <html lang="en" suppressHydrationWarning>
+      <body className="antialiased bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-slate-950 dark:to-slate-900 min-h-screen text-slate-900 dark:text-slate-100">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <ReduxProvider>
+            {children}
+            <Toaster />
+          </ReduxProvider>
+        </ThemeProvider>
       </body>
     </html>
   )

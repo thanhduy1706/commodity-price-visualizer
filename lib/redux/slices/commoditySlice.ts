@@ -46,28 +46,43 @@ export const fetchFreshData = createAsyncThunk(
       const zincData = await zincRes.json()
       const oilData = await oilRes.json()
 
+      // Helper to normalize date to YYYY-MM-DD
+      const normalizeDate = (dateStr: string) => {
+        if (!dateStr) return ""
+        // Handle DD/MM/YYYY format (Copper/Zinc)
+        if (dateStr.includes('/')) {
+          const [day, month, year] = dateStr.split('/')
+          return `${year}-${month}-${day}`
+        }
+        // Handle YYYY-MM-DD format (Oil) or others
+        return dateStr
+      }
+
       // Combine data by date
       const dataMap = new Map<string, ChartDataPoint>()
 
       copperData.data?.forEach((item: any) => {
         if (item.date && item.value) {
-          dataMap.set(item.date, { date: item.date, copper: parseFloat(item.value) })
+          const date = normalizeDate(item.date)
+          dataMap.set(date, { date, copper: parseFloat(item.value) })
         }
       })
 
       zincData.data?.forEach((item: any) => {
         if (item.date && item.value) {
-          const existing: ChartDataPoint = dataMap.get(item.date) || { date: item.date }
+          const date = normalizeDate(item.date)
+          const existing: ChartDataPoint = dataMap.get(date) || { date }
           existing.zinc = parseFloat(item.value)
-          dataMap.set(item.date, existing)
+          dataMap.set(date, existing)
         }
       })
 
       oilData.data?.forEach((item: any) => {
         if (item.date && item.value) {
-          const existing: ChartDataPoint = dataMap.get(item.date) || { date: item.date }
+          const date = normalizeDate(item.date)
+          const existing: ChartDataPoint = dataMap.get(date) || { date }
           existing.oil = parseFloat(item.value)
-          dataMap.set(item.date, existing)
+          dataMap.set(date, existing)
         }
       })
 

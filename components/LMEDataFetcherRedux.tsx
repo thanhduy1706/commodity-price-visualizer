@@ -32,7 +32,9 @@ import {
   PhotoIcon,
   DocumentTextIcon,
   AdjustmentsHorizontalIcon,
-  PresentationChartLineIcon
+  PresentationChartLineIcon,
+  SunIcon,
+  MoonIcon
 } from "@heroicons/react/24/outline"
 import {
   LineChart,
@@ -53,6 +55,7 @@ import { toPng } from "html-to-image"
 import * as XLSX from "xlsx"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
+import { useTheme } from "next-themes"
 
 gsap.registerPlugin(useGSAP)
 
@@ -158,8 +161,11 @@ function calculateCorrelation(data: any[], key1: string, key2: string): number {
 }
 
 // Custom Tooltip Component
-const CustomTooltip = ({ active, payload, label, displayMode, visibleSeries }: any) => {
+const CustomTooltip = ({ active, payload, label, displayMode, visibleSeries, colors }: any) => {
   if (!active || !payload || !payload.length) return null
+
+  // Use passed colors or fallback
+  const themeColors = colors || COLORS
 
   // Helper to find the original raw value and pct from payload
   // Payload values might be indexed, so we look for custom props we added
@@ -184,7 +190,7 @@ const CustomTooltip = ({ active, payload, label, displayMode, visibleSeries }: a
         {visibleSeries.copper && dataItem.rawCopper != null && (
           <div className="flex justify-between items-start">
             <div className="flex items-center gap-2">
-               <span className="w-2 h-2 rounded-full mt-1" style={{ backgroundColor: COLORS.copper }}></span>
+               <span className="w-2 h-2 rounded-full mt-1" style={{ backgroundColor: themeColors.copper }}></span>
                <div className="flex flex-col">
                  <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Copper</span>
                  <span className={`text-xs ${dataItem.pctCopper >= 0 ? 'text-green-600' : 'text-red-600'}`}>
@@ -205,7 +211,7 @@ const CustomTooltip = ({ active, payload, label, displayMode, visibleSeries }: a
         {visibleSeries.zinc && dataItem.rawZinc != null && (
           <div className="flex justify-between items-start">
             <div className="flex items-center gap-2">
-               <span className="w-2 h-2 rounded-full mt-1" style={{ backgroundColor: COLORS.zinc }}></span>
+               <span className="w-2 h-2 rounded-full mt-1" style={{ backgroundColor: themeColors.zinc }}></span>
                <div className="flex flex-col">
                  <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Zinc</span>
                  <span className={`text-xs ${dataItem.pctZinc >= 0 ? 'text-green-600' : 'text-red-600'}`}>
@@ -230,7 +236,7 @@ const CustomTooltip = ({ active, payload, label, displayMode, visibleSeries }: a
         {visibleSeries.oil && dataItem.rawOil != null && (
           <div className="flex justify-between items-start">
              <div className="flex items-center gap-2">
-               <span className="w-2 h-2 rounded-full mt-1" style={{ backgroundColor: COLORS.oil }}></span>
+               <span className="w-2 h-2 rounded-full mt-1" style={{ backgroundColor: themeColors.oil }}></span>
                <div className="flex flex-col">
                  <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Crude Oil</span>
                  <span className={`text-xs ${dataItem.pctOil >= 0 ? 'text-green-600' : 'text-red-600'}`}>
@@ -303,6 +309,21 @@ export default function LMEDataFetcherRedux() {
   const dispatch = useAppDispatch()
   const chartRef = useRef<HTMLDivElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
+  const { theme, setTheme, resolvedTheme } = useTheme()
+
+  // Dynamic Chart Colors for Dark/Light Mode
+  const chartColors = useMemo(() => {
+    const isDark = resolvedTheme === "dark"
+    return {
+      copper: isDark ? "#E08A4E" : "#C87533", // Dark: Custom Orange | Light: Brown
+      zinc: isDark ? "#9FB6C2" : "#6C8A9B",   // Dark: Muted Blue | Light: Slate Blue
+      oil: isDark ? "#4A4A4A" : "#2B2B2B",    // Dark: Dark Grey | Light: Black
+      grid: isDark ? "#334155" : "#e2e8f0",   // Slate 700 : Slate 200
+      text: isDark ? "#94a3b8" : "#64748b",   // Slate 400 : Slate 500
+      brushFill: isDark ? "#1e293b" : "#f8fafc", // Slate 800 : Slate 50
+      brushStroke: isDark ? "#475569" : "#94a3b8" // Slate 600 : Slate 400
+    }
+  }, [resolvedTheme])
 
 
 
@@ -577,6 +598,20 @@ export default function LMEDataFetcherRedux() {
     }
   }
 
+  // Auto-fetch data every 5 minutes
+  const fetchRef = useRef(handleFetchFresh)
+  fetchRef.current = handleFetchFresh
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!loading) {
+        fetchRef.current()
+      }
+    }, 5 * 60 * 1000) // 5 minutes
+
+    return () => clearInterval(interval)
+  }, [loading])
+
   function handleDownloadExcel() {
     if (filteredChartData.length === 0) return
 
@@ -617,8 +652,8 @@ export default function LMEDataFetcherRedux() {
 
     try {
       const dataUrl = await toPng(chartRef.current, {
-        backgroundColor: "#ffffff",
-        pixelRatio: 20,
+        backgroundColor: resolvedTheme === "dark" ? "#0F172A" : "#ffffff",
+        pixelRatio: 4, // 4x is plenty high (20 is overkill/slow)
         cacheBust: true,
       })
 
@@ -637,7 +672,10 @@ export default function LMEDataFetcherRedux() {
     if (!chartRef.current) return
 
     try {
-      const dataUrl = await toPng(chartRef.current, { backgroundColor: "#ffffff" })
+      const dataUrl = await toPng(chartRef.current, {
+        backgroundColor: resolvedTheme === "dark" ? "#0F172A" : "#ffffff",
+        pixelRatio: 4
+      })
       const response = await fetch(dataUrl)
       const blob = await response.blob()
 
@@ -656,17 +694,28 @@ export default function LMEDataFetcherRedux() {
       <Card className="border shadow-sm bg-white dark:bg-slate-900 overflow-hidden flex flex-col flex-1 min-h-0">
         <CardHeader className="border-b bg-slate-50/50 dark:bg-slate-800/50 p-3 sm:pb-4 shrink-0">
           <div className="flex flex-col md:flex-row justify-between md:items-center gap-3 md:gap-4">
-            <div>
+            <div className="flex items-center">
               <CardTitle className="text-lg sm:text-xl font-bold text-slate-800 dark:text-slate-100 gsap-header-item">
                 Commodity Market
               </CardTitle>
+              <Button
+                  variant="ghost"
+                  size="sm"
+                  className="h-8 w-8 p-0 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100 ml-3 shrink-0"
+                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                  title="Toggle Theme"
+              >
+                <SunIcon className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                <MoonIcon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                <span className="sr-only">Toggle theme</span>
+              </Button>
             </div>
 
             {dataSource && lastFetchTime && (
               <div className="flex flex-row md:flex-col items-center md:items-end justify-between md:justify-start gap-2 gsap-header-item">
                  <div className="inline-flex items-center px-2 sm:px-3 py-1 rounded-full text-[10px] sm:text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 dark:bg-blue-900/20 dark:text-blue-400 dark:border-blue-800">
                     <CircleStackIcon className="w-3 h-3 mr-1.5" />
-                    <span className="hidden sm:inline">Source: </span>{dataSource === 'fresh' ? 'Live API' : dataSource === 'database' ? 'Database' : 'Cache'}
+                    <span className="hidden sm:inline"></span>{dataSource === 'fresh' ? '  Live API' : dataSource === 'database' ? ' Database' : 'Cache'}
                  </div>
                  <p className="text-[10px] sm:text-xs text-slate-400 mt-0 md:mt-1.5">
                     {new Date(lastFetchTime).toLocaleString()}
@@ -943,7 +992,7 @@ export default function LMEDataFetcherRedux() {
                         className={`flex items-center gap-2 transition-all duration-300 ease-out active:scale-95 ${visibleSeries.copper ? 'opacity-100 scale-100' : 'opacity-40 grayscale hover:opacity-70 hover:scale-105'}`}
                         title="Toggle Copper"
                       >
-                        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: COLORS.copper }}></div>
+                        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: chartColors.copper }}></div>
                         <span className="text-sm text-slate-600 dark:text-slate-400 font-medium">Copper</span>
                       </button>
                       <button
@@ -951,7 +1000,7 @@ export default function LMEDataFetcherRedux() {
                         className={`flex items-center gap-2 transition-all duration-300 ease-out active:scale-95 ${visibleSeries.zinc ? 'opacity-100 scale-100' : 'opacity-40 grayscale hover:opacity-70 hover:scale-105'}`}
                         title="Toggle Zinc"
                       >
-                        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: COLORS.zinc }}></div>
+                        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: chartColors.zinc }}></div>
                         <span className="text-sm text-slate-600 dark:text-slate-400 font-medium">Zinc</span>
                       </button>
                     </div>
@@ -962,7 +1011,7 @@ export default function LMEDataFetcherRedux() {
                         className={`flex items-center gap-2 transition-all duration-300 ease-out active:scale-95 ${visibleSeries.oil ? 'opacity-100 scale-100' : 'opacity-40 grayscale hover:opacity-70 hover:scale-105'}`}
                         title="Toggle Oil"
                       >
-                        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: COLORS.oil }}></div>
+                        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: chartColors.oil }}></div>
                         <span className="text-sm text-slate-600 dark:text-slate-400 font-medium">Oil (WTI)</span>
                       </button>
                     </div>
@@ -979,14 +1028,14 @@ export default function LMEDataFetcherRedux() {
                           >
                           <CartesianGrid
                             strokeDasharray="3 3"
-                            stroke="#e2e8f0"
+                            stroke={chartColors.grid}
                             vertical={true}
                             strokeOpacity={0.5}
                           />
                           <XAxis
                             dataKey="date"
-                            tick={{ fontSize: 11, fill: "#64748b" }}
-                            axisLine={{ stroke: "#e2e8f0" }}
+                            tick={{ fontSize: 11, fill: chartColors.text }}
+                            axisLine={{ stroke: chartColors.grid }}
                             tickLine={false}
                             dy={10}
                             tickFormatter={formatDate}
@@ -996,7 +1045,7 @@ export default function LMEDataFetcherRedux() {
                           {/* Left Y-Axis for Metals */}
                           <YAxis
                             yAxisId="left"
-                            tick={{ fontSize: 11, fill: "#64748b" }}
+                            tick={{ fontSize: 11, fill: chartColors.text }}
                             axisLine={false}
                             tickLine={false}
                             dx={-5}
@@ -1009,7 +1058,7 @@ export default function LMEDataFetcherRedux() {
                               value: "$/tonne",
                               angle: -90,
                               position: "insideLeft",
-                              style: { fontSize: 11, fill: "#94a3b8" }
+                              style: { fontSize: 11, fill: chartColors.text }
                             } : undefined}
                           />
 
@@ -1018,7 +1067,7 @@ export default function LMEDataFetcherRedux() {
                             <YAxis
                               yAxisId="right"
                               orientation="right"
-                              tick={{ fontSize: 11, fill: "#64748b" }}
+                              tick={{ fontSize: 11, fill: chartColors.text }}
                               axisLine={false}
                               tickLine={false}
                               dx={5}
@@ -1027,14 +1076,14 @@ export default function LMEDataFetcherRedux() {
                                 value: "$/barrel",
                                 angle: 90,
                                 position: "insideRight",
-                                style: { fontSize: 11, fill: "#94a3b8" }
+                                style: { fontSize: 11, fill: chartColors.text }
                               }}
                             />
                           )}
 
                           <Tooltip
-                            content={<CustomTooltip displayMode={displayMode} visibleSeries={visibleSeries} />}
-                            cursor={{ stroke: "#94a3b8", strokeDasharray: "5 5" }}
+                            content={<CustomTooltip displayMode={displayMode} visibleSeries={visibleSeries} colors={chartColors} />}
+                            cursor={{ stroke: chartColors.text, strokeDasharray: "5 5" }}
                           />
 
                           {/* Reference line at 100 for indexed mode */}
@@ -1042,9 +1091,9 @@ export default function LMEDataFetcherRedux() {
                             <ReferenceLine
                               yAxisId="left"
                               y={100}
-                              stroke="#94a3b8"
+                              stroke={chartColors.text}
                               strokeDasharray="3 3"
-                              label={{ value: "Base 100", position: "right", fill: "#94a3b8", fontSize: 10 }}
+                              label={{ value: "Base 100", position: "right", fill: chartColors.text, fontSize: 10 }}
                             />
                           )}
 
@@ -1053,10 +1102,10 @@ export default function LMEDataFetcherRedux() {
                               yAxisId="left"
                               type="monotone"
                               dataKey="copper"
-                              stroke={COLORS.copper}
+                              stroke={chartColors.copper}
                               strokeWidth={2.5}
                               dot={false}
-                              activeDot={{ r: 5, strokeWidth: 0, fill: COLORS.copper }}
+                              activeDot={{ r: 5, strokeWidth: 0, fill: chartColors.copper }}
                               animationDuration={1000}
                             />
                           )}
@@ -1065,10 +1114,10 @@ export default function LMEDataFetcherRedux() {
                               yAxisId="left"
                               type="monotone"
                               dataKey="zinc"
-                              stroke={COLORS.zinc}
+                              stroke={chartColors.zinc}
                               strokeWidth={2.5}
                               dot={false}
-                              activeDot={{ r: 5, strokeWidth: 0, fill: COLORS.zinc }}
+                              activeDot={{ r: 5, strokeWidth: 0, fill: chartColors.zinc }}
                               animationDuration={1000}
                             />
                           )}
@@ -1077,10 +1126,10 @@ export default function LMEDataFetcherRedux() {
                               yAxisId={displayMode === "absolute" ? "right" : "left"}
                               type="monotone"
                               dataKey="oil"
-                              stroke={COLORS.oil}
+                              stroke={chartColors.oil}
                               strokeWidth={2.5}
                               dot={false}
-                              activeDot={{ r: 5, strokeWidth: 0, fill: COLORS.oil }}
+                              activeDot={{ r: 5, strokeWidth: 0, fill: chartColors.oil }}
                               animationDuration={1000}
                             />
                           )}
@@ -1089,8 +1138,8 @@ export default function LMEDataFetcherRedux() {
                           <Brush
                             dataKey="date"
                             height={30}
-                            stroke="#94a3b8"
-                            fill="#f8fafc"
+                            stroke={chartColors.brushStroke}
+                            fill={chartColors.brushFill}
                             tickFormatter={formatDate}
                           />
                         </LineChart>
