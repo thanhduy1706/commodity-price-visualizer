@@ -1,0 +1,3923 @@
+{
+  "source": "copper",
+  "name": "Copper",
+  "data": [
+    {
+      "date": "30/12/2022",
+      "value": "8386.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/01/2023",
+      "value": "8389.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/01/2023",
+      "value": "8208.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/01/2023",
+      "value": "8418.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/01/2023",
+      "value": "8362.00",
+      "source": "Copper"
+    },
+    {
+      "date": "09/01/2023",
+      "value": "8720.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/01/2023",
+      "value": "8766.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/01/2023",
+      "value": "8986.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/01/2023",
+      "value": "9071.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/01/2023",
+      "value": "9106.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/01/2023",
+      "value": "9145.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/01/2023",
+      "value": "9112.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/01/2023",
+      "value": "9435.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/01/2023",
+      "value": "9188.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/01/2023",
+      "value": "9230.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/01/2023",
+      "value": "9340.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/01/2023",
+      "value": "9307.50",
+      "source": "Copper"
+    },
+    {
+      "date": "25/01/2023",
+      "value": "9257.50",
+      "source": "Copper"
+    },
+    {
+      "date": "26/01/2023",
+      "value": "9287.50",
+      "source": "Copper"
+    },
+    {
+      "date": "27/01/2023",
+      "value": "9345.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/01/2023",
+      "value": "9226.00",
+      "source": "Copper"
+    },
+    {
+      "date": "31/01/2023",
+      "value": "9074.50",
+      "source": "Copper"
+    },
+    {
+      "date": "01/02/2023",
+      "value": "9170.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/02/2023",
+      "value": "9113.50",
+      "source": "Copper"
+    },
+    {
+      "date": "03/02/2023",
+      "value": "9055.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/02/2023",
+      "value": "8891.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/02/2023",
+      "value": "8863.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/02/2023",
+      "value": "9005.50",
+      "source": "Copper"
+    },
+    {
+      "date": "09/02/2023",
+      "value": "8953.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/02/2023",
+      "value": "8904.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/02/2023",
+      "value": "8911.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/02/2023",
+      "value": "8931.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/02/2023",
+      "value": "8825.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/02/2023",
+      "value": "8891.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/02/2023",
+      "value": "8870.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/02/2023",
+      "value": "9010.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/02/2023",
+      "value": "9103.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/02/2023",
+      "value": "9120.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/02/2023",
+      "value": "9059.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/02/2023",
+      "value": "8805.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/02/2023",
+      "value": "8749.00",
+      "source": "Copper"
+    },
+    {
+      "date": "28/02/2023",
+      "value": "8843.00",
+      "source": "Copper"
+    },
+    {
+      "date": "01/03/2023",
+      "value": "9066.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/03/2023",
+      "value": "8894.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/03/2023",
+      "value": "8940.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/03/2023",
+      "value": "8817.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/03/2023",
+      "value": "8822.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/03/2023",
+      "value": "8809.50",
+      "source": "Copper"
+    },
+    {
+      "date": "09/03/2023",
+      "value": "8807.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/03/2023",
+      "value": "8750.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/03/2023",
+      "value": "8650.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/03/2023",
+      "value": "8903.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/03/2023",
+      "value": "8520.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/03/2023",
+      "value": "8530.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/03/2023",
+      "value": "8620.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/03/2023",
+      "value": "8676.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/03/2023",
+      "value": "8823.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/03/2023",
+      "value": "8880.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/03/2023",
+      "value": "8915.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/03/2023",
+      "value": "8926.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/03/2023",
+      "value": "8875.00",
+      "source": "Copper"
+    },
+    {
+      "date": "28/03/2023",
+      "value": "8933.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/03/2023",
+      "value": "9047.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/03/2023",
+      "value": "9037.50",
+      "source": "Copper"
+    },
+    {
+      "date": "31/03/2023",
+      "value": "8933.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/04/2023",
+      "value": "8965.50",
+      "source": "Copper"
+    },
+    {
+      "date": "04/04/2023",
+      "value": "8925.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/04/2023",
+      "value": "8778.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/04/2023",
+      "value": "8835.50",
+      "source": "Copper"
+    },
+    {
+      "date": "11/04/2023",
+      "value": "8837.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/04/2023",
+      "value": "8802.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/04/2023",
+      "value": "9000.50",
+      "source": "Copper"
+    },
+    {
+      "date": "14/04/2023",
+      "value": "9080.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/04/2023",
+      "value": "8983.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/04/2023",
+      "value": "8965.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/04/2023",
+      "value": "8874.50",
+      "source": "Copper"
+    },
+    {
+      "date": "20/04/2023",
+      "value": "8873.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/04/2023",
+      "value": "8815.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/04/2023",
+      "value": "8762.00",
+      "source": "Copper"
+    },
+    {
+      "date": "25/04/2023",
+      "value": "8520.50",
+      "source": "Copper"
+    },
+    {
+      "date": "26/04/2023",
+      "value": "8578.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/04/2023",
+      "value": "8465.00",
+      "source": "Copper"
+    },
+    {
+      "date": "28/04/2023",
+      "value": "8569.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/05/2023",
+      "value": "8572.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/05/2023",
+      "value": "8485.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/05/2023",
+      "value": "8538.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/05/2023",
+      "value": "8486.00",
+      "source": "Copper"
+    },
+    {
+      "date": "09/05/2023",
+      "value": "8582.50",
+      "source": "Copper"
+    },
+    {
+      "date": "10/05/2023",
+      "value": "8467.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/05/2023",
+      "value": "8262.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/05/2023",
+      "value": "8238.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/05/2023",
+      "value": "8286.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/05/2023",
+      "value": "8075.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/05/2023",
+      "value": "8175.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/05/2023",
+      "value": "8171.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/05/2023",
+      "value": "8221.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/05/2023",
+      "value": "8093.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/05/2023",
+      "value": "7960.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/05/2023",
+      "value": "7909.00",
+      "source": "Copper"
+    },
+    {
+      "date": "25/05/2023",
+      "value": "7921.00",
+      "source": "Copper"
+    },
+    {
+      "date": "26/05/2023",
+      "value": "8081.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/05/2023",
+      "value": "8120.00",
+      "source": "Copper"
+    },
+    {
+      "date": "31/05/2023",
+      "value": "8015.00",
+      "source": "Copper"
+    },
+    {
+      "date": "01/06/2023",
+      "value": "8210.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/06/2023",
+      "value": "8336.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/06/2023",
+      "value": "8264.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/06/2023",
+      "value": "8310.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/06/2023",
+      "value": "8351.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/06/2023",
+      "value": "8242.50",
+      "source": "Copper"
+    },
+    {
+      "date": "09/06/2023",
+      "value": "8367.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/06/2023",
+      "value": "8286.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/06/2023",
+      "value": "8421.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/06/2023",
+      "value": "8455.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/06/2023",
+      "value": "8478.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/06/2023",
+      "value": "8560.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/06/2023",
+      "value": "8541.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/06/2023",
+      "value": "8560.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/06/2023",
+      "value": "8486.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/06/2023",
+      "value": "8670.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/06/2023",
+      "value": "8488.00",
+      "source": "Copper"
+    },
+    {
+      "date": "26/06/2023",
+      "value": "8435.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/06/2023",
+      "value": "8366.00",
+      "source": "Copper"
+    },
+    {
+      "date": "28/06/2023",
+      "value": "8267.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/06/2023",
+      "value": "8165.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/06/2023",
+      "value": "8209.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/07/2023",
+      "value": "8354.50",
+      "source": "Copper"
+    },
+    {
+      "date": "04/07/2023",
+      "value": "8348.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/07/2023",
+      "value": "8250.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/07/2023",
+      "value": "8278.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/07/2023",
+      "value": "8297.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/07/2023",
+      "value": "8285.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/07/2023",
+      "value": "8370.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/07/2023",
+      "value": "8365.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/07/2023",
+      "value": "8583.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/07/2023",
+      "value": "8650.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/07/2023",
+      "value": "8460.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/07/2023",
+      "value": "8408.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/07/2023",
+      "value": "8353.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/07/2023",
+      "value": "8541.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/07/2023",
+      "value": "8421.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/07/2023",
+      "value": "8429.00",
+      "source": "Copper"
+    },
+    {
+      "date": "25/07/2023",
+      "value": "8595.00",
+      "source": "Copper"
+    },
+    {
+      "date": "26/07/2023",
+      "value": "8532.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/07/2023",
+      "value": "8578.00",
+      "source": "Copper"
+    },
+    {
+      "date": "28/07/2023",
+      "value": "8591.00",
+      "source": "Copper"
+    },
+    {
+      "date": "31/07/2023",
+      "value": "8635.00",
+      "source": "Copper"
+    },
+    {
+      "date": "01/08/2023",
+      "value": "8720.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/08/2023",
+      "value": "8542.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/08/2023",
+      "value": "8471.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/08/2023",
+      "value": "8450.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/08/2023",
+      "value": "8494.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/08/2023",
+      "value": "8275.00",
+      "source": "Copper"
+    },
+    {
+      "date": "09/08/2023",
+      "value": "8393.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/08/2023",
+      "value": "8422.50",
+      "source": "Copper"
+    },
+    {
+      "date": "11/08/2023",
+      "value": "8240.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/08/2023",
+      "value": "8240.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/08/2023",
+      "value": "8126.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/08/2023",
+      "value": "8130.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/08/2023",
+      "value": "8214.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/08/2023",
+      "value": "8175.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/08/2023",
+      "value": "8239.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/08/2023",
+      "value": "8341.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/08/2023",
+      "value": "8377.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/08/2023",
+      "value": "8358.00",
+      "source": "Copper"
+    },
+    {
+      "date": "25/08/2023",
+      "value": "8380.50",
+      "source": "Copper"
+    },
+    {
+      "date": "29/08/2023",
+      "value": "8373.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/08/2023",
+      "value": "8394.00",
+      "source": "Copper"
+    },
+    {
+      "date": "31/08/2023",
+      "value": "8358.50",
+      "source": "Copper"
+    },
+    {
+      "date": "01/09/2023",
+      "value": "8512.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/09/2023",
+      "value": "8405.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/09/2023",
+      "value": "8425.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/09/2023",
+      "value": "8394.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/09/2023",
+      "value": "8242.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/09/2023",
+      "value": "8223.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/09/2023",
+      "value": "8332.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/09/2023",
+      "value": "8337.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/09/2023",
+      "value": "8352.50",
+      "source": "Copper"
+    },
+    {
+      "date": "14/09/2023",
+      "value": "8422.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/09/2023",
+      "value": "8376.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/09/2023",
+      "value": "8319.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/09/2023",
+      "value": "8232.50",
+      "source": "Copper"
+    },
+    {
+      "date": "20/09/2023",
+      "value": "8275.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/09/2023",
+      "value": "8100.50",
+      "source": "Copper"
+    },
+    {
+      "date": "22/09/2023",
+      "value": "8187.50",
+      "source": "Copper"
+    },
+    {
+      "date": "25/09/2023",
+      "value": "8102.00",
+      "source": "Copper"
+    },
+    {
+      "date": "26/09/2023",
+      "value": "8065.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/09/2023",
+      "value": "8016.50",
+      "source": "Copper"
+    },
+    {
+      "date": "28/09/2023",
+      "value": "8111.50",
+      "source": "Copper"
+    },
+    {
+      "date": "29/09/2023",
+      "value": "8230.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/10/2023",
+      "value": "8100.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/10/2023",
+      "value": "7958.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/10/2023",
+      "value": "7910.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/10/2023",
+      "value": "7812.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/10/2023",
+      "value": "7886.00",
+      "source": "Copper"
+    },
+    {
+      "date": "09/10/2023",
+      "value": "8015.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/10/2023",
+      "value": "7907.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/10/2023",
+      "value": "7943.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/10/2023",
+      "value": "7994.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/10/2023",
+      "value": "7890.50",
+      "source": "Copper"
+    },
+    {
+      "date": "16/10/2023",
+      "value": "7918.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/10/2023",
+      "value": "7846.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/10/2023",
+      "value": "7947.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/10/2023",
+      "value": "7937.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/10/2023",
+      "value": "7875.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/10/2023",
+      "value": "7824.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/10/2023",
+      "value": "7900.00",
+      "source": "Copper"
+    },
+    {
+      "date": "25/10/2023",
+      "value": "7945.00",
+      "source": "Copper"
+    },
+    {
+      "date": "26/10/2023",
+      "value": "7938.50",
+      "source": "Copper"
+    },
+    {
+      "date": "27/10/2023",
+      "value": "7963.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/10/2023",
+      "value": "8109.00",
+      "source": "Copper"
+    },
+    {
+      "date": "31/10/2023",
+      "value": "8036.00",
+      "source": "Copper"
+    },
+    {
+      "date": "01/11/2023",
+      "value": "8040.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/11/2023",
+      "value": "8065.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/11/2023",
+      "value": "8070.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/11/2023",
+      "value": "8136.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/11/2023",
+      "value": "8067.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/11/2023",
+      "value": "8087.00",
+      "source": "Copper"
+    },
+    {
+      "date": "09/11/2023",
+      "value": "8030.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/11/2023",
+      "value": "8005.50",
+      "source": "Copper"
+    },
+    {
+      "date": "13/11/2023",
+      "value": "8014.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/11/2023",
+      "value": "8080.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/11/2023",
+      "value": "8168.50",
+      "source": "Copper"
+    },
+    {
+      "date": "16/11/2023",
+      "value": "8165.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/11/2023",
+      "value": "8140.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/11/2023",
+      "value": "8246.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/11/2023",
+      "value": "8323.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/11/2023",
+      "value": "8295.50",
+      "source": "Copper"
+    },
+    {
+      "date": "23/11/2023",
+      "value": "8307.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/11/2023",
+      "value": "8295.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/11/2023",
+      "value": "8280.00",
+      "source": "Copper"
+    },
+    {
+      "date": "28/11/2023",
+      "value": "8277.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/11/2023",
+      "value": "8383.50",
+      "source": "Copper"
+    },
+    {
+      "date": "30/11/2023",
+      "value": "8331.00",
+      "source": "Copper"
+    },
+    {
+      "date": "01/12/2023",
+      "value": "8455.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/12/2023",
+      "value": "8415.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/12/2023",
+      "value": "8258.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/12/2023",
+      "value": "8296.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/12/2023",
+      "value": "8220.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/12/2023",
+      "value": "8347.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/12/2023",
+      "value": "8275.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/12/2023",
+      "value": "8271.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/12/2023",
+      "value": "8204.50",
+      "source": "Copper"
+    },
+    {
+      "date": "14/12/2023",
+      "value": "8461.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/12/2023",
+      "value": "8470.50",
+      "source": "Copper"
+    },
+    {
+      "date": "18/12/2023",
+      "value": "8422.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/12/2023",
+      "value": "8438.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/12/2023",
+      "value": "8466.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/12/2023",
+      "value": "8459.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/12/2023",
+      "value": "8498.50",
+      "source": "Copper"
+    },
+    {
+      "date": "27/12/2023",
+      "value": "8511.00",
+      "source": "Copper"
+    },
+    {
+      "date": "28/12/2023",
+      "value": "8528.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/12/2023",
+      "value": "8475.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/01/2024",
+      "value": "8426.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/01/2024",
+      "value": "8380.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/01/2024",
+      "value": "8374.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/01/2024",
+      "value": "8345.50",
+      "source": "Copper"
+    },
+    {
+      "date": "08/01/2024",
+      "value": "8294.00",
+      "source": "Copper"
+    },
+    {
+      "date": "09/01/2024",
+      "value": "8301.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/01/2024",
+      "value": "8280.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/01/2024",
+      "value": "8330.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/01/2024",
+      "value": "8288.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/01/2024",
+      "value": "8238.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/01/2024",
+      "value": "8279.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/01/2024",
+      "value": "8229.50",
+      "source": "Copper"
+    },
+    {
+      "date": "18/01/2024",
+      "value": "8188.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/01/2024",
+      "value": "8270.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/01/2024",
+      "value": "8252.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/01/2024",
+      "value": "8283.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/01/2024",
+      "value": "8458.00",
+      "source": "Copper"
+    },
+    {
+      "date": "25/01/2024",
+      "value": "8485.00",
+      "source": "Copper"
+    },
+    {
+      "date": "26/01/2024",
+      "value": "8445.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/01/2024",
+      "value": "8420.50",
+      "source": "Copper"
+    },
+    {
+      "date": "30/01/2024",
+      "value": "8461.00",
+      "source": "Copper"
+    },
+    {
+      "date": "31/01/2024",
+      "value": "8512.50",
+      "source": "Copper"
+    },
+    {
+      "date": "01/02/2024",
+      "value": "8435.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/02/2024",
+      "value": "8399.50",
+      "source": "Copper"
+    },
+    {
+      "date": "05/02/2024",
+      "value": "8328.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/02/2024",
+      "value": "8275.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/02/2024",
+      "value": "8280.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/02/2024",
+      "value": "8200.00",
+      "source": "Copper"
+    },
+    {
+      "date": "09/02/2024",
+      "value": "8091.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/02/2024",
+      "value": "8085.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/02/2024",
+      "value": "8180.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/02/2024",
+      "value": "8133.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/02/2024",
+      "value": "8152.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/02/2024",
+      "value": "8320.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/02/2024",
+      "value": "8364.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/02/2024",
+      "value": "8366.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/02/2024",
+      "value": "8470.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/02/2024",
+      "value": "8480.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/02/2024",
+      "value": "8442.00",
+      "source": "Copper"
+    },
+    {
+      "date": "26/02/2024",
+      "value": "8372.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/02/2024",
+      "value": "8396.00",
+      "source": "Copper"
+    },
+    {
+      "date": "28/02/2024",
+      "value": "8340.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/02/2024",
+      "value": "8388.00",
+      "source": "Copper"
+    },
+    {
+      "date": "01/03/2024",
+      "value": "8393.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/03/2024",
+      "value": "8436.50",
+      "source": "Copper"
+    },
+    {
+      "date": "05/03/2024",
+      "value": "8429.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/03/2024",
+      "value": "8440.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/03/2024",
+      "value": "8557.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/03/2024",
+      "value": "8552.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/03/2024",
+      "value": "8521.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/03/2024",
+      "value": "8565.50",
+      "source": "Copper"
+    },
+    {
+      "date": "13/03/2024",
+      "value": "8726.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/03/2024",
+      "value": "8790.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/03/2024",
+      "value": "8906.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/03/2024",
+      "value": "8972.50",
+      "source": "Copper"
+    },
+    {
+      "date": "19/03/2024",
+      "value": "8874.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/03/2024",
+      "value": "8788.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/03/2024",
+      "value": "8873.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/03/2024",
+      "value": "8740.00",
+      "source": "Copper"
+    },
+    {
+      "date": "25/03/2024",
+      "value": "8742.00",
+      "source": "Copper"
+    },
+    {
+      "date": "26/03/2024",
+      "value": "8763.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/03/2024",
+      "value": "8695.50",
+      "source": "Copper"
+    },
+    {
+      "date": "28/03/2024",
+      "value": "8728.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/04/2024",
+      "value": "8919.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/04/2024",
+      "value": "8930.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/04/2024",
+      "value": "9256.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/04/2024",
+      "value": "9197.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/04/2024",
+      "value": "9299.00",
+      "source": "Copper"
+    },
+    {
+      "date": "09/04/2024",
+      "value": "9295.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/04/2024",
+      "value": "9360.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/04/2024",
+      "value": "9239.50",
+      "source": "Copper"
+    },
+    {
+      "date": "12/04/2024",
+      "value": "9400.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/04/2024",
+      "value": "9385.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/04/2024",
+      "value": "9375.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/04/2024",
+      "value": "9432.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/04/2024",
+      "value": "9615.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/04/2024",
+      "value": "9748.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/04/2024",
+      "value": "9814.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/04/2024",
+      "value": "9598.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/04/2024",
+      "value": "9670.00",
+      "source": "Copper"
+    },
+    {
+      "date": "25/04/2024",
+      "value": "9790.00",
+      "source": "Copper"
+    },
+    {
+      "date": "26/04/2024",
+      "value": "9868.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/04/2024",
+      "value": "9930.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/04/2024",
+      "value": "9973.00",
+      "source": "Copper"
+    },
+    {
+      "date": "01/05/2024",
+      "value": "9790.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/05/2024",
+      "value": "9655.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/05/2024",
+      "value": "9736.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/05/2024",
+      "value": "9846.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/05/2024",
+      "value": "9739.50",
+      "source": "Copper"
+    },
+    {
+      "date": "09/05/2024",
+      "value": "9726.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/05/2024",
+      "value": "9941.50",
+      "source": "Copper"
+    },
+    {
+      "date": "13/05/2024",
+      "value": "10008.50",
+      "source": "Copper"
+    },
+    {
+      "date": "14/05/2024",
+      "value": "10076.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/05/2024",
+      "value": "10220.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/05/2024",
+      "value": "10307.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/05/2024",
+      "value": "10397.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/05/2024",
+      "value": "10856.50",
+      "source": "Copper"
+    },
+    {
+      "date": "21/05/2024",
+      "value": "10770.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/05/2024",
+      "value": "10446.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/05/2024",
+      "value": "10290.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/05/2024",
+      "value": "10256.00",
+      "source": "Copper"
+    },
+    {
+      "date": "28/05/2024",
+      "value": "10330.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/05/2024",
+      "value": "10292.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/05/2024",
+      "value": "10016.00",
+      "source": "Copper"
+    },
+    {
+      "date": "31/05/2024",
+      "value": "9984.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/06/2024",
+      "value": "9985.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/06/2024",
+      "value": "9858.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/06/2024",
+      "value": "9764.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/06/2024",
+      "value": "9925.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/06/2024",
+      "value": "9835.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/06/2024",
+      "value": "9694.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/06/2024",
+      "value": "9566.50",
+      "source": "Copper"
+    },
+    {
+      "date": "12/06/2024",
+      "value": "9697.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/06/2024",
+      "value": "9732.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/06/2024",
+      "value": "9649.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/06/2024",
+      "value": "9476.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/06/2024",
+      "value": "9425.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/06/2024",
+      "value": "9651.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/06/2024",
+      "value": "9645.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/06/2024",
+      "value": "9562.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/06/2024",
+      "value": "9525.00",
+      "source": "Copper"
+    },
+    {
+      "date": "25/06/2024",
+      "value": "9491.50",
+      "source": "Copper"
+    },
+    {
+      "date": "26/06/2024",
+      "value": "9418.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/06/2024",
+      "value": "9422.00",
+      "source": "Copper"
+    },
+    {
+      "date": "28/06/2024",
+      "value": "9476.00",
+      "source": "Copper"
+    },
+    {
+      "date": "01/07/2024",
+      "value": "9516.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/07/2024",
+      "value": "9546.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/07/2024",
+      "value": "9622.50",
+      "source": "Copper"
+    },
+    {
+      "date": "04/07/2024",
+      "value": "9726.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/07/2024",
+      "value": "9808.50",
+      "source": "Copper"
+    },
+    {
+      "date": "08/07/2024",
+      "value": "9807.00",
+      "source": "Copper"
+    },
+    {
+      "date": "09/07/2024",
+      "value": "9761.50",
+      "source": "Copper"
+    },
+    {
+      "date": "10/07/2024",
+      "value": "9695.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/07/2024",
+      "value": "9693.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/07/2024",
+      "value": "9672.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/07/2024",
+      "value": "9679.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/07/2024",
+      "value": "9565.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/07/2024",
+      "value": "9532.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/07/2024",
+      "value": "9340.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/07/2024",
+      "value": "9213.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/07/2024",
+      "value": "9127.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/07/2024",
+      "value": "9051.50",
+      "source": "Copper"
+    },
+    {
+      "date": "24/07/2024",
+      "value": "9018.00",
+      "source": "Copper"
+    },
+    {
+      "date": "25/07/2024",
+      "value": "8916.00",
+      "source": "Copper"
+    },
+    {
+      "date": "26/07/2024",
+      "value": "9018.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/07/2024",
+      "value": "8905.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/07/2024",
+      "value": "8808.00",
+      "source": "Copper"
+    },
+    {
+      "date": "31/07/2024",
+      "value": "9014.00",
+      "source": "Copper"
+    },
+    {
+      "date": "01/08/2024",
+      "value": "8997.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/08/2024",
+      "value": "8976.50",
+      "source": "Copper"
+    },
+    {
+      "date": "05/08/2024",
+      "value": "8620.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/08/2024",
+      "value": "8714.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/08/2024",
+      "value": "8684.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/08/2024",
+      "value": "8648.50",
+      "source": "Copper"
+    },
+    {
+      "date": "09/08/2024",
+      "value": "8803.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/08/2024",
+      "value": "8850.50",
+      "source": "Copper"
+    },
+    {
+      "date": "13/08/2024",
+      "value": "8831.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/08/2024",
+      "value": "8905.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/08/2024",
+      "value": "9007.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/08/2024",
+      "value": "8936.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/08/2024",
+      "value": "9115.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/08/2024",
+      "value": "9151.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/08/2024",
+      "value": "9137.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/08/2024",
+      "value": "9060.50",
+      "source": "Copper"
+    },
+    {
+      "date": "23/08/2024",
+      "value": "9071.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/08/2024",
+      "value": "9247.00",
+      "source": "Copper"
+    },
+    {
+      "date": "28/08/2024",
+      "value": "9135.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/08/2024",
+      "value": "9115.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/08/2024",
+      "value": "9214.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/09/2024",
+      "value": "9033.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/09/2024",
+      "value": "8853.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/09/2024",
+      "value": "8830.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/09/2024",
+      "value": "8912.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/09/2024",
+      "value": "9012.00",
+      "source": "Copper"
+    },
+    {
+      "date": "09/09/2024",
+      "value": "8988.50",
+      "source": "Copper"
+    },
+    {
+      "date": "10/09/2024",
+      "value": "8934.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/09/2024",
+      "value": "9007.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/09/2024",
+      "value": "9115.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/09/2024",
+      "value": "9080.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/09/2024",
+      "value": "9215.50",
+      "source": "Copper"
+    },
+    {
+      "date": "17/09/2024",
+      "value": "9241.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/09/2024",
+      "value": "9288.50",
+      "source": "Copper"
+    },
+    {
+      "date": "19/09/2024",
+      "value": "9405.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/09/2024",
+      "value": "9393.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/09/2024",
+      "value": "9324.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/09/2024",
+      "value": "9601.50",
+      "source": "Copper"
+    },
+    {
+      "date": "25/09/2024",
+      "value": "9618.00",
+      "source": "Copper"
+    },
+    {
+      "date": "26/09/2024",
+      "value": "9843.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/09/2024",
+      "value": "9858.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/09/2024",
+      "value": "9766.00",
+      "source": "Copper"
+    },
+    {
+      "date": "01/10/2024",
+      "value": "9740.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/10/2024",
+      "value": "9882.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/10/2024",
+      "value": "9785.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/10/2024",
+      "value": "9783.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/10/2024",
+      "value": "9816.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/10/2024",
+      "value": "9618.00",
+      "source": "Copper"
+    },
+    {
+      "date": "09/10/2024",
+      "value": "9549.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/10/2024",
+      "value": "9506.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/10/2024",
+      "value": "9596.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/10/2024",
+      "value": "9515.50",
+      "source": "Copper"
+    },
+    {
+      "date": "15/10/2024",
+      "value": "9401.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/10/2024",
+      "value": "9488.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/10/2024",
+      "value": "9378.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/10/2024",
+      "value": "9472.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/10/2024",
+      "value": "9592.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/10/2024",
+      "value": "9490.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/10/2024",
+      "value": "9363.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/10/2024",
+      "value": "9412.00",
+      "source": "Copper"
+    },
+    {
+      "date": "25/10/2024",
+      "value": "9384.50",
+      "source": "Copper"
+    },
+    {
+      "date": "28/10/2024",
+      "value": "9400.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/10/2024",
+      "value": "9430.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/10/2024",
+      "value": "9355.00",
+      "source": "Copper"
+    },
+    {
+      "date": "31/10/2024",
+      "value": "9426.00",
+      "source": "Copper"
+    },
+    {
+      "date": "01/11/2024",
+      "value": "9424.50",
+      "source": "Copper"
+    },
+    {
+      "date": "04/11/2024",
+      "value": "9504.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/11/2024",
+      "value": "9587.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/11/2024",
+      "value": "9250.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/11/2024",
+      "value": "9385.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/11/2024",
+      "value": "9321.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/11/2024",
+      "value": "9250.50",
+      "source": "Copper"
+    },
+    {
+      "date": "12/11/2024",
+      "value": "9004.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/11/2024",
+      "value": "8968.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/11/2024",
+      "value": "8767.50",
+      "source": "Copper"
+    },
+    {
+      "date": "15/11/2024",
+      "value": "9050.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/11/2024",
+      "value": "8859.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/11/2024",
+      "value": "8919.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/11/2024",
+      "value": "9021.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/11/2024",
+      "value": "8945.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/11/2024",
+      "value": "8828.50",
+      "source": "Copper"
+    },
+    {
+      "date": "25/11/2024",
+      "value": "8917.00",
+      "source": "Copper"
+    },
+    {
+      "date": "26/11/2024",
+      "value": "8923.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/11/2024",
+      "value": "8897.00",
+      "source": "Copper"
+    },
+    {
+      "date": "28/11/2024",
+      "value": "8850.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/11/2024",
+      "value": "8878.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/12/2024",
+      "value": "8870.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/12/2024",
+      "value": "8940.50",
+      "source": "Copper"
+    },
+    {
+      "date": "04/12/2024",
+      "value": "8950.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/12/2024",
+      "value": "8966.50",
+      "source": "Copper"
+    },
+    {
+      "date": "06/12/2024",
+      "value": "9039.00",
+      "source": "Copper"
+    },
+    {
+      "date": "09/12/2024",
+      "value": "9103.50",
+      "source": "Copper"
+    },
+    {
+      "date": "10/12/2024",
+      "value": "9066.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/12/2024",
+      "value": "9076.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/12/2024",
+      "value": "9038.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/12/2024",
+      "value": "8988.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/12/2024",
+      "value": "8931.50",
+      "source": "Copper"
+    },
+    {
+      "date": "17/12/2024",
+      "value": "8851.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/12/2024",
+      "value": "8905.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/12/2024",
+      "value": "8795.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/12/2024",
+      "value": "8792.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/12/2024",
+      "value": "8837.50",
+      "source": "Copper"
+    },
+    {
+      "date": "24/12/2024",
+      "value": "8847.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/12/2024",
+      "value": "8842.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/12/2024",
+      "value": "8832.00",
+      "source": "Copper"
+    },
+    {
+      "date": "31/12/2024",
+      "value": "8705.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/01/2025",
+      "value": "8685.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/01/2025",
+      "value": "8700.50",
+      "source": "Copper"
+    },
+    {
+      "date": "06/01/2025",
+      "value": "8893.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/01/2025",
+      "value": "8885.50",
+      "source": "Copper"
+    },
+    {
+      "date": "08/01/2025",
+      "value": "8846.50",
+      "source": "Copper"
+    },
+    {
+      "date": "09/01/2025",
+      "value": "8960.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/01/2025",
+      "value": "8995.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/01/2025",
+      "value": "8979.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/01/2025",
+      "value": "9015.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/01/2025",
+      "value": "9019.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/01/2025",
+      "value": "9134.50",
+      "source": "Copper"
+    },
+    {
+      "date": "17/01/2025",
+      "value": "9130.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/01/2025",
+      "value": "9043.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/01/2025",
+      "value": "9066.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/01/2025",
+      "value": "9122.50",
+      "source": "Copper"
+    },
+    {
+      "date": "23/01/2025",
+      "value": "9055.50",
+      "source": "Copper"
+    },
+    {
+      "date": "24/01/2025",
+      "value": "9217.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/01/2025",
+      "value": "9050.00",
+      "source": "Copper"
+    },
+    {
+      "date": "28/01/2025",
+      "value": "8890.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/01/2025",
+      "value": "8880.50",
+      "source": "Copper"
+    },
+    {
+      "date": "30/01/2025",
+      "value": "8974.50",
+      "source": "Copper"
+    },
+    {
+      "date": "31/01/2025",
+      "value": "8949.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/02/2025",
+      "value": "8866.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/02/2025",
+      "value": "8991.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/02/2025",
+      "value": "9024.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/02/2025",
+      "value": "9164.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/02/2025",
+      "value": "9287.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/02/2025",
+      "value": "9286.50",
+      "source": "Copper"
+    },
+    {
+      "date": "11/02/2025",
+      "value": "9240.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/02/2025",
+      "value": "9277.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/02/2025",
+      "value": "9361.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/02/2025",
+      "value": "9810.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/02/2025",
+      "value": "9290.50",
+      "source": "Copper"
+    },
+    {
+      "date": "18/02/2025",
+      "value": "9294.50",
+      "source": "Copper"
+    },
+    {
+      "date": "19/02/2025",
+      "value": "9432.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/02/2025",
+      "value": "9514.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/02/2025",
+      "value": "9493.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/02/2025",
+      "value": "9489.00",
+      "source": "Copper"
+    },
+    {
+      "date": "25/02/2025",
+      "value": "9461.00",
+      "source": "Copper"
+    },
+    {
+      "date": "26/02/2025",
+      "value": "9503.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/02/2025",
+      "value": "9414.50",
+      "source": "Copper"
+    },
+    {
+      "date": "28/02/2025",
+      "value": "9363.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/03/2025",
+      "value": "9360.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/03/2025",
+      "value": "9393.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/03/2025",
+      "value": "9540.50",
+      "source": "Copper"
+    },
+    {
+      "date": "06/03/2025",
+      "value": "9653.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/03/2025",
+      "value": "9662.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/03/2025",
+      "value": "9546.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/03/2025",
+      "value": "9627.50",
+      "source": "Copper"
+    },
+    {
+      "date": "12/03/2025",
+      "value": "9765.50",
+      "source": "Copper"
+    },
+    {
+      "date": "13/03/2025",
+      "value": "9702.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/03/2025",
+      "value": "9758.50",
+      "source": "Copper"
+    },
+    {
+      "date": "17/03/2025",
+      "value": "9747.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/03/2025",
+      "value": "9833.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/03/2025",
+      "value": "9913.50",
+      "source": "Copper"
+    },
+    {
+      "date": "20/03/2025",
+      "value": "9911.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/03/2025",
+      "value": "9827.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/03/2025",
+      "value": "9977.00",
+      "source": "Copper"
+    },
+    {
+      "date": "25/03/2025",
+      "value": "9980.00",
+      "source": "Copper"
+    },
+    {
+      "date": "26/03/2025",
+      "value": "9883.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/03/2025",
+      "value": "9786.50",
+      "source": "Copper"
+    },
+    {
+      "date": "28/03/2025",
+      "value": "9794.00",
+      "source": "Copper"
+    },
+    {
+      "date": "31/03/2025",
+      "value": "9672.50",
+      "source": "Copper"
+    },
+    {
+      "date": "01/04/2025",
+      "value": "9651.50",
+      "source": "Copper"
+    },
+    {
+      "date": "02/04/2025",
+      "value": "9645.50",
+      "source": "Copper"
+    },
+    {
+      "date": "03/04/2025",
+      "value": "9396.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/04/2025",
+      "value": "8830.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/04/2025",
+      "value": "8820.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/04/2025",
+      "value": "8758.00",
+      "source": "Copper"
+    },
+    {
+      "date": "09/04/2025",
+      "value": "8538.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/04/2025",
+      "value": "8976.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/04/2025",
+      "value": "9175.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/04/2025",
+      "value": "9212.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/04/2025",
+      "value": "9093.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/04/2025",
+      "value": "9082.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/04/2025",
+      "value": "9103.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/04/2025",
+      "value": "9293.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/04/2025",
+      "value": "9416.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/04/2025",
+      "value": "9410.00",
+      "source": "Copper"
+    },
+    {
+      "date": "25/04/2025",
+      "value": "9363.50",
+      "source": "Copper"
+    },
+    {
+      "date": "28/04/2025",
+      "value": "9365.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/04/2025",
+      "value": "9486.50",
+      "source": "Copper"
+    },
+    {
+      "date": "30/04/2025",
+      "value": "9203.00",
+      "source": "Copper"
+    },
+    {
+      "date": "01/05/2025",
+      "value": "9193.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/05/2025",
+      "value": "9375.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/05/2025",
+      "value": "9499.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/05/2025",
+      "value": "9485.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/05/2025",
+      "value": "9411.00",
+      "source": "Copper"
+    },
+    {
+      "date": "09/05/2025",
+      "value": "9485.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/05/2025",
+      "value": "9585.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/05/2025",
+      "value": "9533.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/05/2025",
+      "value": "9648.50",
+      "source": "Copper"
+    },
+    {
+      "date": "15/05/2025",
+      "value": "9537.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/05/2025",
+      "value": "9533.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/05/2025",
+      "value": "9540.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/05/2025",
+      "value": "9528.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/05/2025",
+      "value": "9532.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/05/2025",
+      "value": "9492.50",
+      "source": "Copper"
+    },
+    {
+      "date": "23/05/2025",
+      "value": "9594.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/05/2025",
+      "value": "9652.00",
+      "source": "Copper"
+    },
+    {
+      "date": "28/05/2025",
+      "value": "9680.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/05/2025",
+      "value": "9641.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/05/2025",
+      "value": "9622.50",
+      "source": "Copper"
+    },
+    {
+      "date": "02/06/2025",
+      "value": "9650.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/06/2025",
+      "value": "9642.50",
+      "source": "Copper"
+    },
+    {
+      "date": "04/06/2025",
+      "value": "9673.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/06/2025",
+      "value": "9833.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/06/2025",
+      "value": "9794.50",
+      "source": "Copper"
+    },
+    {
+      "date": "09/06/2025",
+      "value": "9848.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/06/2025",
+      "value": "9853.50",
+      "source": "Copper"
+    },
+    {
+      "date": "11/06/2025",
+      "value": "9729.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/06/2025",
+      "value": "9778.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/06/2025",
+      "value": "9657.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/06/2025",
+      "value": "9736.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/06/2025",
+      "value": "9820.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/06/2025",
+      "value": "9840.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/06/2025",
+      "value": "9711.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/06/2025",
+      "value": "9940.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/06/2025",
+      "value": "10033.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/06/2025",
+      "value": "9930.00",
+      "source": "Copper"
+    },
+    {
+      "date": "25/06/2025",
+      "value": "9809.00",
+      "source": "Copper"
+    },
+    {
+      "date": "26/06/2025",
+      "value": "10110.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/06/2025",
+      "value": "10050.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/06/2025",
+      "value": "10039.00",
+      "source": "Copper"
+    },
+    {
+      "date": "01/07/2025",
+      "value": "10060.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/07/2025",
+      "value": "10040.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/07/2025",
+      "value": "10119.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/07/2025",
+      "value": "9970.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/07/2025",
+      "value": "9892.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/07/2025",
+      "value": "9924.50",
+      "source": "Copper"
+    },
+    {
+      "date": "09/07/2025",
+      "value": "9634.50",
+      "source": "Copper"
+    },
+    {
+      "date": "10/07/2025",
+      "value": "9751.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/07/2025",
+      "value": "9637.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/07/2025",
+      "value": "9554.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/07/2025",
+      "value": "9563.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/07/2025",
+      "value": "9561.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/07/2025",
+      "value": "9584.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/07/2025",
+      "value": "9666.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/07/2025",
+      "value": "9773.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/07/2025",
+      "value": "9817.50",
+      "source": "Copper"
+    },
+    {
+      "date": "23/07/2025",
+      "value": "9860.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/07/2025",
+      "value": "9860.50",
+      "source": "Copper"
+    },
+    {
+      "date": "25/07/2025",
+      "value": "9787.50",
+      "source": "Copper"
+    },
+    {
+      "date": "28/07/2025",
+      "value": "9782.50",
+      "source": "Copper"
+    },
+    {
+      "date": "29/07/2025",
+      "value": "9733.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/07/2025",
+      "value": "9698.50",
+      "source": "Copper"
+    },
+    {
+      "date": "31/07/2025",
+      "value": "9605.00",
+      "source": "Copper"
+    },
+    {
+      "date": "01/08/2025",
+      "value": "9535.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/08/2025",
+      "value": "9622.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/08/2025",
+      "value": "9576.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/08/2025",
+      "value": "9604.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/08/2025",
+      "value": "9636.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/08/2025",
+      "value": "9625.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/08/2025",
+      "value": "9643.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/08/2025",
+      "value": "9661.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/08/2025",
+      "value": "9745.50",
+      "source": "Copper"
+    },
+    {
+      "date": "14/08/2025",
+      "value": "9665.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/08/2025",
+      "value": "9620.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/08/2025",
+      "value": "9626.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/08/2025",
+      "value": "9621.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/08/2025",
+      "value": "9576.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/08/2025",
+      "value": "9610.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/08/2025",
+      "value": "9642.50",
+      "source": "Copper"
+    },
+    {
+      "date": "26/08/2025",
+      "value": "9707.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/08/2025",
+      "value": "9681.00",
+      "source": "Copper"
+    },
+    {
+      "date": "28/08/2025",
+      "value": "9703.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/08/2025",
+      "value": "9804.00",
+      "source": "Copper"
+    },
+    {
+      "date": "01/09/2025",
+      "value": "9804.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/09/2025",
+      "value": "9773.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/09/2025",
+      "value": "9872.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/09/2025",
+      "value": "9810.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/09/2025",
+      "value": "9880.50",
+      "source": "Copper"
+    },
+    {
+      "date": "08/09/2025",
+      "value": "9810.00",
+      "source": "Copper"
+    },
+    {
+      "date": "09/09/2025",
+      "value": "9822.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/09/2025",
+      "value": "9846.50",
+      "source": "Copper"
+    },
+    {
+      "date": "11/09/2025",
+      "value": "9925.50",
+      "source": "Copper"
+    },
+    {
+      "date": "12/09/2025",
+      "value": "10004.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/09/2025",
+      "value": "9985.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/09/2025",
+      "value": "10071.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/09/2025",
+      "value": "9893.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/09/2025",
+      "value": "9893.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/09/2025",
+      "value": "9903.50",
+      "source": "Copper"
+    },
+    {
+      "date": "22/09/2025",
+      "value": "9921.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/09/2025",
+      "value": "9895.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/09/2025",
+      "value": "9860.00",
+      "source": "Copper"
+    },
+    {
+      "date": "25/09/2025",
+      "value": "10311.00",
+      "source": "Copper"
+    },
+    {
+      "date": "26/09/2025",
+      "value": "10125.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/09/2025",
+      "value": "10232.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/09/2025",
+      "value": "10295.00",
+      "source": "Copper"
+    },
+    {
+      "date": "01/10/2025",
+      "value": "10262.50",
+      "source": "Copper"
+    },
+    {
+      "date": "02/10/2025",
+      "value": "10454.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/10/2025",
+      "value": "10537.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/10/2025",
+      "value": "10608.50",
+      "source": "Copper"
+    },
+    {
+      "date": "07/10/2025",
+      "value": "10642.50",
+      "source": "Copper"
+    },
+    {
+      "date": "08/10/2025",
+      "value": "10737.50",
+      "source": "Copper"
+    },
+    {
+      "date": "09/10/2025",
+      "value": "10866.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/10/2025",
+      "value": "10733.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/10/2025",
+      "value": "10617.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/10/2025",
+      "value": "10599.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/10/2025",
+      "value": "10701.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/10/2025",
+      "value": "10494.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/10/2025",
+      "value": "10527.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/10/2025",
+      "value": "10580.50",
+      "source": "Copper"
+    },
+    {
+      "date": "21/10/2025",
+      "value": "10611.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/10/2025",
+      "value": "10599.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/10/2025",
+      "value": "10796.50",
+      "source": "Copper"
+    },
+    {
+      "date": "24/10/2025",
+      "value": "10806.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/10/2025",
+      "value": "10986.50",
+      "source": "Copper"
+    },
+    {
+      "date": "28/10/2025",
+      "value": "10916.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/10/2025",
+      "value": "11067.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/10/2025",
+      "value": "10948.00",
+      "source": "Copper"
+    },
+    {
+      "date": "31/10/2025",
+      "value": "10901.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/11/2025",
+      "value": "10872.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/11/2025",
+      "value": "10599.50",
+      "source": "Copper"
+    },
+    {
+      "date": "05/11/2025",
+      "value": "10602.00",
+      "source": "Copper"
+    },
+    {
+      "date": "06/11/2025",
+      "value": "10722.00",
+      "source": "Copper"
+    },
+    {
+      "date": "07/11/2025",
+      "value": "10715.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/11/2025",
+      "value": "10798.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/11/2025",
+      "value": "10776.50",
+      "source": "Copper"
+    },
+    {
+      "date": "12/11/2025",
+      "value": "10831.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/11/2025",
+      "value": "10940.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/11/2025",
+      "value": "10850.50",
+      "source": "Copper"
+    },
+    {
+      "date": "17/11/2025",
+      "value": "10798.00",
+      "source": "Copper"
+    },
+    {
+      "date": "18/11/2025",
+      "value": "10647.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/11/2025",
+      "value": "10783.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/11/2025",
+      "value": "10788.50",
+      "source": "Copper"
+    },
+    {
+      "date": "21/11/2025",
+      "value": "10685.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/11/2025",
+      "value": "10790.00",
+      "source": "Copper"
+    },
+    {
+      "date": "25/11/2025",
+      "value": "10875.00",
+      "source": "Copper"
+    },
+    {
+      "date": "26/11/2025",
+      "value": "10976.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/11/2025",
+      "value": "10933.00",
+      "source": "Copper"
+    },
+    {
+      "date": "28/11/2025",
+      "value": "11003.00",
+      "source": "Copper"
+    },
+    {
+      "date": "01/12/2025",
+      "value": "11298.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/12/2025",
+      "value": "11280.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/12/2025",
+      "value": "11435.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/12/2025",
+      "value": "11471.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/12/2025",
+      "value": "11644.50",
+      "source": "Copper"
+    },
+    {
+      "date": "08/12/2025",
+      "value": "11690.00",
+      "source": "Copper"
+    },
+    {
+      "date": "09/12/2025",
+      "value": "11563.00",
+      "source": "Copper"
+    },
+    {
+      "date": "10/12/2025",
+      "value": "11640.00",
+      "source": "Copper"
+    },
+    {
+      "date": "11/12/2025",
+      "value": "11735.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/12/2025",
+      "value": "11815.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/12/2025",
+      "value": "11773.50",
+      "source": "Copper"
+    },
+    {
+      "date": "16/12/2025",
+      "value": "11635.00",
+      "source": "Copper"
+    },
+    {
+      "date": "17/12/2025",
+      "value": "11719.50",
+      "source": "Copper"
+    },
+    {
+      "date": "18/12/2025",
+      "value": "11720.50",
+      "source": "Copper"
+    },
+    {
+      "date": "19/12/2025",
+      "value": "11844.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/12/2025",
+      "value": "11939.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/12/2025",
+      "value": "12065.00",
+      "source": "Copper"
+    },
+    {
+      "date": "24/12/2025",
+      "value": "12252.50",
+      "source": "Copper"
+    },
+    {
+      "date": "29/12/2025",
+      "value": "12305.00",
+      "source": "Copper"
+    },
+    {
+      "date": "30/12/2025",
+      "value": "12510.00",
+      "source": "Copper"
+    },
+    {
+      "date": "31/12/2025",
+      "value": "12502.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/01/2026",
+      "value": "12570.00",
+      "source": "Copper"
+    },
+    {
+      "date": "05/01/2026",
+      "value": "12883.50",
+      "source": "Copper"
+    },
+    {
+      "date": "06/01/2026",
+      "value": "13268.50",
+      "source": "Copper"
+    },
+    {
+      "date": "07/01/2026",
+      "value": "13143.00",
+      "source": "Copper"
+    },
+    {
+      "date": "08/01/2026",
+      "value": "12883.00",
+      "source": "Copper"
+    },
+    {
+      "date": "09/01/2026",
+      "value": "13059.00",
+      "source": "Copper"
+    },
+    {
+      "date": "12/01/2026",
+      "value": "13309.00",
+      "source": "Copper"
+    },
+    {
+      "date": "13/01/2026",
+      "value": "13308.00",
+      "source": "Copper"
+    },
+    {
+      "date": "14/01/2026",
+      "value": "13333.00",
+      "source": "Copper"
+    },
+    {
+      "date": "15/01/2026",
+      "value": "13200.00",
+      "source": "Copper"
+    },
+    {
+      "date": "16/01/2026",
+      "value": "12999.00",
+      "source": "Copper"
+    },
+    {
+      "date": "19/01/2026",
+      "value": "12999.00",
+      "source": "Copper"
+    },
+    {
+      "date": "20/01/2026",
+      "value": "13058.00",
+      "source": "Copper"
+    },
+    {
+      "date": "21/01/2026",
+      "value": "12896.00",
+      "source": "Copper"
+    },
+    {
+      "date": "22/01/2026",
+      "value": "12631.00",
+      "source": "Copper"
+    },
+    {
+      "date": "23/01/2026",
+      "value": "12919.50",
+      "source": "Copper"
+    },
+    {
+      "date": "26/01/2026",
+      "value": "13194.00",
+      "source": "Copper"
+    },
+    {
+      "date": "27/01/2026",
+      "value": "12975.00",
+      "source": "Copper"
+    },
+    {
+      "date": "28/01/2026",
+      "value": "12993.00",
+      "source": "Copper"
+    },
+    {
+      "date": "29/01/2026",
+      "value": "13842.50",
+      "source": "Copper"
+    },
+    {
+      "date": "30/01/2026",
+      "value": "13369.00",
+      "source": "Copper"
+    },
+    {
+      "date": "02/02/2026",
+      "value": "12985.00",
+      "source": "Copper"
+    },
+    {
+      "date": "03/02/2026",
+      "value": "13294.00",
+      "source": "Copper"
+    },
+    {
+      "date": "04/02/2026",
+      "value": "13246.00",
+      "source": "Copper"
+    }
+  ],
+  "fetched_at": "2026-02-05T10:06:37.456373",
+  "saved_to_db": 83
+}

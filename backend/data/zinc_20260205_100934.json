@@ -1,0 +1,3923 @@
+{
+  "source": "zinc",
+  "name": "Zinc",
+  "data": [
+    {
+      "date": "30/12/2022",
+      "value": "3023.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/01/2023",
+      "value": "3002.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/01/2023",
+      "value": "2975.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/01/2023",
+      "value": "3038.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/01/2023",
+      "value": "2992.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/01/2023",
+      "value": "3152.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/01/2023",
+      "value": "3191.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/01/2023",
+      "value": "3174.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/01/2023",
+      "value": "3213.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/01/2023",
+      "value": "3301.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/01/2023",
+      "value": "3350.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/01/2023",
+      "value": "3284.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/01/2023",
+      "value": "3413.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/01/2023",
+      "value": "3370.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/01/2023",
+      "value": "3443.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/01/2023",
+      "value": "3435.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/01/2023",
+      "value": "3420.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/01/2023",
+      "value": "3438.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/01/2023",
+      "value": "3486.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/01/2023",
+      "value": "3508.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/01/2023",
+      "value": "3448.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "31/01/2023",
+      "value": "3408.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/02/2023",
+      "value": "3439.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/02/2023",
+      "value": "3348.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/02/2023",
+      "value": "3360.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/02/2023",
+      "value": "3198.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/02/2023",
+      "value": "3135.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/02/2023",
+      "value": "3200.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/02/2023",
+      "value": "3178.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/02/2023",
+      "value": "3118.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/02/2023",
+      "value": "3041.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/02/2023",
+      "value": "3133.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/02/2023",
+      "value": "3066.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/02/2023",
+      "value": "3033.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/02/2023",
+      "value": "3035.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/02/2023",
+      "value": "3108.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/02/2023",
+      "value": "3168.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/02/2023",
+      "value": "3106.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/02/2023",
+      "value": "3085.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/02/2023",
+      "value": "3019.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/02/2023",
+      "value": "3034.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/02/2023",
+      "value": "3042.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/03/2023",
+      "value": "3091.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/03/2023",
+      "value": "3073.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/03/2023",
+      "value": "3088.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/03/2023",
+      "value": "3028.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/03/2023",
+      "value": "3010.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/03/2023",
+      "value": "2988.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/03/2023",
+      "value": "2966.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/03/2023",
+      "value": "2940.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/03/2023",
+      "value": "2904.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/03/2023",
+      "value": "2952.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/03/2023",
+      "value": "2864.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/03/2023",
+      "value": "2862.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/03/2023",
+      "value": "2932.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/03/2023",
+      "value": "2924.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/03/2023",
+      "value": "2896.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/03/2023",
+      "value": "2887.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/03/2023",
+      "value": "2892.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/03/2023",
+      "value": "2898.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/03/2023",
+      "value": "2913.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/03/2023",
+      "value": "2935.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/03/2023",
+      "value": "3034.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/03/2023",
+      "value": "2978.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "31/03/2023",
+      "value": "2906.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/04/2023",
+      "value": "2936.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/04/2023",
+      "value": "2891.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/04/2023",
+      "value": "2847.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/04/2023",
+      "value": "2810.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/04/2023",
+      "value": "2782.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/04/2023",
+      "value": "2749.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/04/2023",
+      "value": "2828.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/04/2023",
+      "value": "2900.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/04/2023",
+      "value": "2844.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/04/2023",
+      "value": "2853.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/04/2023",
+      "value": "2766.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/04/2023",
+      "value": "2754.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/04/2023",
+      "value": "2738.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/04/2023",
+      "value": "2668.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/04/2023",
+      "value": "2617.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/04/2023",
+      "value": "2614.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/04/2023",
+      "value": "2608.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/04/2023",
+      "value": "2678.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/05/2023",
+      "value": "2618.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/05/2023",
+      "value": "2608.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/05/2023",
+      "value": "2609.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/05/2023",
+      "value": "2628.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/05/2023",
+      "value": "2656.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/05/2023",
+      "value": "2611.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/05/2023",
+      "value": "2573.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/05/2023",
+      "value": "2515.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/05/2023",
+      "value": "2557.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/05/2023",
+      "value": "2473.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/05/2023",
+      "value": "2520.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/05/2023",
+      "value": "2481.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/05/2023",
+      "value": "2490.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/05/2023",
+      "value": "2432.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/05/2023",
+      "value": "2362.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/05/2023",
+      "value": "2305.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/05/2023",
+      "value": "2222.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/05/2023",
+      "value": "2319.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/05/2023",
+      "value": "2323.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "31/05/2023",
+      "value": "2227.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/06/2023",
+      "value": "2270.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/06/2023",
+      "value": "2301.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/06/2023",
+      "value": "2269.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/06/2023",
+      "value": "2288.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/06/2023",
+      "value": "2381.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/06/2023",
+      "value": "2370.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/06/2023",
+      "value": "2396.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/06/2023",
+      "value": "2356.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/06/2023",
+      "value": "2381.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/06/2023",
+      "value": "2449.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/06/2023",
+      "value": "2460.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/06/2023",
+      "value": "2484.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/06/2023",
+      "value": "2431.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/06/2023",
+      "value": "2374.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/06/2023",
+      "value": "2337.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/06/2023",
+      "value": "2442.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/06/2023",
+      "value": "2362.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/06/2023",
+      "value": "2331.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/06/2023",
+      "value": "2361.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/06/2023",
+      "value": "2346.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/06/2023",
+      "value": "2325.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/06/2023",
+      "value": "2362.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/07/2023",
+      "value": "2361.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/07/2023",
+      "value": "2368.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/07/2023",
+      "value": "2355.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/07/2023",
+      "value": "2364.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/07/2023",
+      "value": "2336.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/07/2023",
+      "value": "2341.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/07/2023",
+      "value": "2360.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/07/2023",
+      "value": "2359.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/07/2023",
+      "value": "2461.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/07/2023",
+      "value": "2412.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/07/2023",
+      "value": "2353.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/07/2023",
+      "value": "2347.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/07/2023",
+      "value": "2348.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/07/2023",
+      "value": "2400.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/07/2023",
+      "value": "2356.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/07/2023",
+      "value": "2365.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/07/2023",
+      "value": "2445.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/07/2023",
+      "value": "2454.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/07/2023",
+      "value": "2483.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/07/2023",
+      "value": "2484.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "31/07/2023",
+      "value": "2549.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/08/2023",
+      "value": "2553.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/08/2023",
+      "value": "2526.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/08/2023",
+      "value": "2462.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/08/2023",
+      "value": "2481.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/08/2023",
+      "value": "2498.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/08/2023",
+      "value": "2447.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/08/2023",
+      "value": "2498.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/08/2023",
+      "value": "2476.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/08/2023",
+      "value": "2415.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/08/2023",
+      "value": "2356.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/08/2023",
+      "value": "2311.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/08/2023",
+      "value": "2280.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/08/2023",
+      "value": "2311.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/08/2023",
+      "value": "2259.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/08/2023",
+      "value": "2269.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/08/2023",
+      "value": "2335.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/08/2023",
+      "value": "2328.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/08/2023",
+      "value": "2362.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/08/2023",
+      "value": "2375.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/08/2023",
+      "value": "2418.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/08/2023",
+      "value": "2425.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "31/08/2023",
+      "value": "2412.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/09/2023",
+      "value": "2455.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/09/2023",
+      "value": "2454.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/09/2023",
+      "value": "2455.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/09/2023",
+      "value": "2435.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/09/2023",
+      "value": "2428.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/09/2023",
+      "value": "2405.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/09/2023",
+      "value": "2437.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/09/2023",
+      "value": "2473.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/09/2023",
+      "value": "2453.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/09/2023",
+      "value": "2550.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/09/2023",
+      "value": "2532.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/09/2023",
+      "value": "2492.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/09/2023",
+      "value": "2476.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/09/2023",
+      "value": "2510.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/09/2023",
+      "value": "2473.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/09/2023",
+      "value": "2532.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/09/2023",
+      "value": "2503.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/09/2023",
+      "value": "2507.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/09/2023",
+      "value": "2463.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/09/2023",
+      "value": "2559.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/09/2023",
+      "value": "2640.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/10/2023",
+      "value": "2601.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/10/2023",
+      "value": "2510.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/10/2023",
+      "value": "2500.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/10/2023",
+      "value": "2453.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/10/2023",
+      "value": "2472.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/10/2023",
+      "value": "2474.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/10/2023",
+      "value": "2436.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/10/2023",
+      "value": "2440.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/10/2023",
+      "value": "2445.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/10/2023",
+      "value": "2423.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/10/2023",
+      "value": "2434.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/10/2023",
+      "value": "2375.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/10/2023",
+      "value": "2430.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/10/2023",
+      "value": "2407.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/10/2023",
+      "value": "2415.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/10/2023",
+      "value": "2403.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/10/2023",
+      "value": "2416.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/10/2023",
+      "value": "2457.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/10/2023",
+      "value": "2430.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/10/2023",
+      "value": "2445.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/10/2023",
+      "value": "2463.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "31/10/2023",
+      "value": "2432.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/11/2023",
+      "value": "2479.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/11/2023",
+      "value": "2512.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/11/2023",
+      "value": "2493.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/11/2023",
+      "value": "2559.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/11/2023",
+      "value": "2536.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/11/2023",
+      "value": "2604.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/11/2023",
+      "value": "2591.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/11/2023",
+      "value": "2583.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/11/2023",
+      "value": "2537.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/11/2023",
+      "value": "2537.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/11/2023",
+      "value": "2646.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/11/2023",
+      "value": "2571.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/11/2023",
+      "value": "2568.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/11/2023",
+      "value": "2562.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/11/2023",
+      "value": "2537.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/11/2023",
+      "value": "2499.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/11/2023",
+      "value": "2520.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/11/2023",
+      "value": "2544.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/11/2023",
+      "value": "2548.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/11/2023",
+      "value": "2529.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/11/2023",
+      "value": "2506.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/11/2023",
+      "value": "2477.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/12/2023",
+      "value": "2465.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/12/2023",
+      "value": "2470.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/12/2023",
+      "value": "2420.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/12/2023",
+      "value": "2431.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/12/2023",
+      "value": "2410.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/12/2023",
+      "value": "2407.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/12/2023",
+      "value": "2373.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/12/2023",
+      "value": "2436.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/12/2023",
+      "value": "2416.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/12/2023",
+      "value": "2506.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/12/2023",
+      "value": "2523.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/12/2023",
+      "value": "2549.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/12/2023",
+      "value": "2555.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/12/2023",
+      "value": "2561.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/12/2023",
+      "value": "2553.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/12/2023",
+      "value": "2575.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/12/2023",
+      "value": "2605.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/12/2023",
+      "value": "2619.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/12/2023",
+      "value": "2640.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/01/2024",
+      "value": "2606.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/01/2024",
+      "value": "2571.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/01/2024",
+      "value": "2530.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/01/2024",
+      "value": "2512.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/01/2024",
+      "value": "2485.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/01/2024",
+      "value": "2502.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/01/2024",
+      "value": "2490.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/01/2024",
+      "value": "2506.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/01/2024",
+      "value": "2478.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/01/2024",
+      "value": "2533.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/01/2024",
+      "value": "2518.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/01/2024",
+      "value": "2486.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/01/2024",
+      "value": "2440.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/01/2024",
+      "value": "2458.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/01/2024",
+      "value": "2438.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/01/2024",
+      "value": "2494.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/01/2024",
+      "value": "2563.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/01/2024",
+      "value": "2593.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/01/2024",
+      "value": "2581.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/01/2024",
+      "value": "2564.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/01/2024",
+      "value": "2545.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "31/01/2024",
+      "value": "2551.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/02/2024",
+      "value": "2477.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/02/2024",
+      "value": "2462.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/02/2024",
+      "value": "2417.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/02/2024",
+      "value": "2416.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/02/2024",
+      "value": "2400.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/02/2024",
+      "value": "2372.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/02/2024",
+      "value": "2321.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/02/2024",
+      "value": "2293.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/02/2024",
+      "value": "2296.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/02/2024",
+      "value": "2285.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/02/2024",
+      "value": "2321.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/02/2024",
+      "value": "2341.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/02/2024",
+      "value": "2341.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/02/2024",
+      "value": "2326.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/02/2024",
+      "value": "2358.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/02/2024",
+      "value": "2357.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/02/2024",
+      "value": "2348.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/02/2024",
+      "value": "2378.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/02/2024",
+      "value": "2397.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/02/2024",
+      "value": "2341.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/02/2024",
+      "value": "2381.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/03/2024",
+      "value": "2362.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/03/2024",
+      "value": "2392.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/03/2024",
+      "value": "2417.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/03/2024",
+      "value": "2445.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/03/2024",
+      "value": "2494.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/03/2024",
+      "value": "2501.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/03/2024",
+      "value": "2515.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/03/2024",
+      "value": "2534.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/03/2024",
+      "value": "2523.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/03/2024",
+      "value": "2519.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/03/2024",
+      "value": "2523.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/03/2024",
+      "value": "2515.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/03/2024",
+      "value": "2465.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/03/2024",
+      "value": "2460.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/03/2024",
+      "value": "2500.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/03/2024",
+      "value": "2447.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/03/2024",
+      "value": "2435.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/03/2024",
+      "value": "2424.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/03/2024",
+      "value": "2365.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/03/2024",
+      "value": "2390.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/04/2024",
+      "value": "2436.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/04/2024",
+      "value": "2429.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/04/2024",
+      "value": "2551.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/04/2024",
+      "value": "2587.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/04/2024",
+      "value": "2626.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/04/2024",
+      "value": "2658.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/04/2024",
+      "value": "2731.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/04/2024",
+      "value": "2710.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/04/2024",
+      "value": "2847.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/04/2024",
+      "value": "2771.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/04/2024",
+      "value": "2702.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/04/2024",
+      "value": "2788.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/04/2024",
+      "value": "2812.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/04/2024",
+      "value": "2832.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/04/2024",
+      "value": "2792.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/04/2024",
+      "value": "2744.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/04/2024",
+      "value": "2795.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/04/2024",
+      "value": "2861.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/04/2024",
+      "value": "2845.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/04/2024",
+      "value": "2881.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/04/2024",
+      "value": "2924.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/05/2024",
+      "value": "2834.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/05/2024",
+      "value": "2858.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/05/2024",
+      "value": "2889.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/05/2024",
+      "value": "2883.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/05/2024",
+      "value": "2859.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/05/2024",
+      "value": "2857.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/05/2024",
+      "value": "2912.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/05/2024",
+      "value": "2929.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/05/2024",
+      "value": "2935.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/05/2024",
+      "value": "2953.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/05/2024",
+      "value": "2935.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/05/2024",
+      "value": "2928.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/05/2024",
+      "value": "3046.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/05/2024",
+      "value": "3092.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/05/2024",
+      "value": "3028.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/05/2024",
+      "value": "3005.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/05/2024",
+      "value": "3012.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/05/2024",
+      "value": "3053.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/05/2024",
+      "value": "3059.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/05/2024",
+      "value": "2984.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "31/05/2024",
+      "value": "2994.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/06/2024",
+      "value": "2928.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/06/2024",
+      "value": "2868.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/06/2024",
+      "value": "2822.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/06/2024",
+      "value": "2842.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/06/2024",
+      "value": "2833.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/06/2024",
+      "value": "2758.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/06/2024",
+      "value": "2725.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/06/2024",
+      "value": "2763.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/06/2024",
+      "value": "2808.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/06/2024",
+      "value": "2731.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/06/2024",
+      "value": "2756.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/06/2024",
+      "value": "2731.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/06/2024",
+      "value": "2816.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/06/2024",
+      "value": "2811.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/06/2024",
+      "value": "2785.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/06/2024",
+      "value": "2798.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/06/2024",
+      "value": "2807.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/06/2024",
+      "value": "2860.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/06/2024",
+      "value": "2875.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/06/2024",
+      "value": "2919.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/07/2024",
+      "value": "2911.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/07/2024",
+      "value": "2871.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/07/2024",
+      "value": "2914.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/07/2024",
+      "value": "2947.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/07/2024",
+      "value": "2954.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/07/2024",
+      "value": "2925.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/07/2024",
+      "value": "2871.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/07/2024",
+      "value": "2868.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/07/2024",
+      "value": "2902.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/07/2024",
+      "value": "2869.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/07/2024",
+      "value": "2903.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/07/2024",
+      "value": "2859.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/07/2024",
+      "value": "2818.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/07/2024",
+      "value": "2736.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/07/2024",
+      "value": "2715.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/07/2024",
+      "value": "2659.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/07/2024",
+      "value": "2637.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/07/2024",
+      "value": "2652.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/07/2024",
+      "value": "2597.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/07/2024",
+      "value": "2608.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/07/2024",
+      "value": "2613.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/07/2024",
+      "value": "2570.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "31/07/2024",
+      "value": "2634.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/08/2024",
+      "value": "2621.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/08/2024",
+      "value": "2627.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/08/2024",
+      "value": "2521.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/08/2024",
+      "value": "2540.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/08/2024",
+      "value": "2515.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/08/2024",
+      "value": "2579.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/08/2024",
+      "value": "2696.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/08/2024",
+      "value": "2713.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/08/2024",
+      "value": "2636.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/08/2024",
+      "value": "2677.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/08/2024",
+      "value": "2710.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/08/2024",
+      "value": "2693.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/08/2024",
+      "value": "2745.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/08/2024",
+      "value": "2770.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/08/2024",
+      "value": "2796.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/08/2024",
+      "value": "2826.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/08/2024",
+      "value": "2841.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/08/2024",
+      "value": "2883.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/08/2024",
+      "value": "2812.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/08/2024",
+      "value": "2819.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/08/2024",
+      "value": "2861.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/09/2024",
+      "value": "2777.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/09/2024",
+      "value": "2749.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/09/2024",
+      "value": "2732.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/09/2024",
+      "value": "2687.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/09/2024",
+      "value": "2713.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/09/2024",
+      "value": "2680.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/09/2024",
+      "value": "2652.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/09/2024",
+      "value": "2726.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/09/2024",
+      "value": "2809.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/09/2024",
+      "value": "2798.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/09/2024",
+      "value": "2895.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/09/2024",
+      "value": "2883.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/09/2024",
+      "value": "2888.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/09/2024",
+      "value": "2891.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/09/2024",
+      "value": "2860.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/09/2024",
+      "value": "2837.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/09/2024",
+      "value": "2942.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/09/2024",
+      "value": "2957.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/09/2024",
+      "value": "3038.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/09/2024",
+      "value": "3045.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/09/2024",
+      "value": "3075.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/10/2024",
+      "value": "3108.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/10/2024",
+      "value": "3130.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/10/2024",
+      "value": "3134.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/10/2024",
+      "value": "3143.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/10/2024",
+      "value": "3153.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/10/2024",
+      "value": "3082.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/10/2024",
+      "value": "3000.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/10/2024",
+      "value": "3016.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/10/2024",
+      "value": "3107.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/10/2024",
+      "value": "3046.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/10/2024",
+      "value": "2997.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/10/2024",
+      "value": "3071.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/10/2024",
+      "value": "3007.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/10/2024",
+      "value": "3081.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/10/2024",
+      "value": "3122.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/10/2024",
+      "value": "3151.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/10/2024",
+      "value": "3165.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/10/2024",
+      "value": "3237.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/10/2024",
+      "value": "3077.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/10/2024",
+      "value": "3104.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/10/2024",
+      "value": "3160.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/10/2024",
+      "value": "3152.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "31/10/2024",
+      "value": "3101.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/11/2024",
+      "value": "3061.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/11/2024",
+      "value": "3028.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/11/2024",
+      "value": "3052.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/11/2024",
+      "value": "2955.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/11/2024",
+      "value": "3051.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/11/2024",
+      "value": "2965.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/11/2024",
+      "value": "2980.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/11/2024",
+      "value": "2917.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/11/2024",
+      "value": "2924.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/11/2024",
+      "value": "2902.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/11/2024",
+      "value": "3005.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/11/2024",
+      "value": "2926.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/11/2024",
+      "value": "2943.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/11/2024",
+      "value": "2967.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/11/2024",
+      "value": "2986.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/11/2024",
+      "value": "2964.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/11/2024",
+      "value": "3010.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/11/2024",
+      "value": "3082.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/11/2024",
+      "value": "3107.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/11/2024",
+      "value": "3044.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/11/2024",
+      "value": "3090.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/12/2024",
+      "value": "3084.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/12/2024",
+      "value": "3078.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/12/2024",
+      "value": "3075.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/12/2024",
+      "value": "3098.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/12/2024",
+      "value": "3061.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/12/2024",
+      "value": "3110.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/12/2024",
+      "value": "3105.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/12/2024",
+      "value": "3092.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/12/2024",
+      "value": "3060.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/12/2024",
+      "value": "3082.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/12/2024",
+      "value": "3060.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/12/2024",
+      "value": "3019.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/12/2024",
+      "value": "2987.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/12/2024",
+      "value": "2960.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/12/2024",
+      "value": "2957.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/12/2024",
+      "value": "2996.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/12/2024",
+      "value": "3021.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/12/2024",
+      "value": "2995.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/12/2024",
+      "value": "3025.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "31/12/2024",
+      "value": "2973.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/01/2025",
+      "value": "2926.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/01/2025",
+      "value": "2864.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/01/2025",
+      "value": "2878.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/01/2025",
+      "value": "2843.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/01/2025",
+      "value": "2797.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/01/2025",
+      "value": "2820.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/01/2025",
+      "value": "2856.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/01/2025",
+      "value": "2838.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/01/2025",
+      "value": "2830.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/01/2025",
+      "value": "2791.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/01/2025",
+      "value": "2823.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/01/2025",
+      "value": "2882.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/01/2025",
+      "value": "2890.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/01/2025",
+      "value": "2886.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/01/2025",
+      "value": "2851.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/01/2025",
+      "value": "2817.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/01/2025",
+      "value": "2821.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/01/2025",
+      "value": "2790.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/01/2025",
+      "value": "2746.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/01/2025",
+      "value": "2720.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/01/2025",
+      "value": "2755.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "31/01/2025",
+      "value": "2710.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/02/2025",
+      "value": "2698.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/02/2025",
+      "value": "2759.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/02/2025",
+      "value": "2718.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/02/2025",
+      "value": "2769.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/02/2025",
+      "value": "2815.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/02/2025",
+      "value": "2784.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/02/2025",
+      "value": "2762.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/02/2025",
+      "value": "2814.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/02/2025",
+      "value": "2810.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/02/2025",
+      "value": "2843.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/02/2025",
+      "value": "2802.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/02/2025",
+      "value": "2835.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/02/2025",
+      "value": "2850.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/02/2025",
+      "value": "2879.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/02/2025",
+      "value": "2858.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/02/2025",
+      "value": "2838.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/02/2025",
+      "value": "2777.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/02/2025",
+      "value": "2793.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/02/2025",
+      "value": "2801.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/02/2025",
+      "value": "2767.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/03/2025",
+      "value": "2805.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/03/2025",
+      "value": "2797.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/03/2025",
+      "value": "2826.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/03/2025",
+      "value": "2887.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/03/2025",
+      "value": "2850.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/03/2025",
+      "value": "2826.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/03/2025",
+      "value": "2873.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/03/2025",
+      "value": "2935.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/03/2025",
+      "value": "2904.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/03/2025",
+      "value": "2964.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/03/2025",
+      "value": "2948.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/03/2025",
+      "value": "2896.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/03/2025",
+      "value": "2915.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/03/2025",
+      "value": "2898.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/03/2025",
+      "value": "2906.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/03/2025",
+      "value": "2945.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/03/2025",
+      "value": "2947.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/03/2025",
+      "value": "2929.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/03/2025",
+      "value": "2891.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/03/2025",
+      "value": "2851.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "31/03/2025",
+      "value": "2828.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/04/2025",
+      "value": "2816.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/04/2025",
+      "value": "2773.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/04/2025",
+      "value": "2724.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/04/2025",
+      "value": "2646.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/04/2025",
+      "value": "2576.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/04/2025",
+      "value": "2610.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/04/2025",
+      "value": "2532.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/04/2025",
+      "value": "2621.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/04/2025",
+      "value": "2650.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/04/2025",
+      "value": "2626.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/04/2025",
+      "value": "2607.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/04/2025",
+      "value": "2543.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/04/2025",
+      "value": "2520.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/04/2025",
+      "value": "2565.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/04/2025",
+      "value": "2607.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/04/2025",
+      "value": "2635.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/04/2025",
+      "value": "2617.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/04/2025",
+      "value": "2598.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/04/2025",
+      "value": "2623.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/04/2025",
+      "value": "2592.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/05/2025",
+      "value": "2567.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/05/2025",
+      "value": "2581.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/05/2025",
+      "value": "2583.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/05/2025",
+      "value": "2583.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/05/2025",
+      "value": "2561.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/05/2025",
+      "value": "2620.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/05/2025",
+      "value": "2685.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/05/2025",
+      "value": "2638.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/05/2025",
+      "value": "2737.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/05/2025",
+      "value": "2690.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/05/2025",
+      "value": "2680.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/05/2025",
+      "value": "2658.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/05/2025",
+      "value": "2665.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/05/2025",
+      "value": "2679.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/05/2025",
+      "value": "2661.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/05/2025",
+      "value": "2650.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/05/2025",
+      "value": "2671.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/05/2025",
+      "value": "2684.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/05/2025",
+      "value": "2680.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/05/2025",
+      "value": "2630.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/06/2025",
+      "value": "2652.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/06/2025",
+      "value": "2666.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/06/2025",
+      "value": "2678.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/06/2025",
+      "value": "2654.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/06/2025",
+      "value": "2627.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/06/2025",
+      "value": "2615.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/06/2025",
+      "value": "2614.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/06/2025",
+      "value": "2632.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/06/2025",
+      "value": "2614.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/06/2025",
+      "value": "2562.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/06/2025",
+      "value": "2632.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/06/2025",
+      "value": "2612.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/06/2025",
+      "value": "2602.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/06/2025",
+      "value": "2597.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/06/2025",
+      "value": "2614.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/06/2025",
+      "value": "2645.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/06/2025",
+      "value": "2686.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/06/2025",
+      "value": "2691.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/06/2025",
+      "value": "2735.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/06/2025",
+      "value": "2752.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/06/2025",
+      "value": "2763.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/07/2025",
+      "value": "2718.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/07/2025",
+      "value": "2710.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/07/2025",
+      "value": "2726.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/07/2025",
+      "value": "2713.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/07/2025",
+      "value": "2671.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/07/2025",
+      "value": "2698.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/07/2025",
+      "value": "2717.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/07/2025",
+      "value": "2782.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/07/2025",
+      "value": "2742.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/07/2025",
+      "value": "2710.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/07/2025",
+      "value": "2698.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/07/2025",
+      "value": "2676.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/07/2025",
+      "value": "2700.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/07/2025",
+      "value": "2780.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/07/2025",
+      "value": "2845.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/07/2025",
+      "value": "2821.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/07/2025",
+      "value": "2860.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/07/2025",
+      "value": "2853.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/07/2025",
+      "value": "2844.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/07/2025",
+      "value": "2815.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/07/2025",
+      "value": "2790.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/07/2025",
+      "value": "2794.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "31/07/2025",
+      "value": "2768.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/08/2025",
+      "value": "2705.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/08/2025",
+      "value": "2735.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/08/2025",
+      "value": "2754.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/08/2025",
+      "value": "2777.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/08/2025",
+      "value": "2807.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/08/2025",
+      "value": "2810.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/08/2025",
+      "value": "2803.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/08/2025",
+      "value": "2826.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/08/2025",
+      "value": "2841.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/08/2025",
+      "value": "2823.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/08/2025",
+      "value": "2811.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/08/2025",
+      "value": "2785.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/08/2025",
+      "value": "2757.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/08/2025",
+      "value": "2762.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/08/2025",
+      "value": "2760.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/08/2025",
+      "value": "2771.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/08/2025",
+      "value": "2788.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/08/2025",
+      "value": "2774.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/08/2025",
+      "value": "2764.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/08/2025",
+      "value": "2815.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/09/2025",
+      "value": "2839.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/09/2025",
+      "value": "2873.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/09/2025",
+      "value": "2887.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/09/2025",
+      "value": "2847.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/09/2025",
+      "value": "2889.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/09/2025",
+      "value": "2884.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/09/2025",
+      "value": "2876.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/09/2025",
+      "value": "2890.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/09/2025",
+      "value": "2907.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/09/2025",
+      "value": "2948.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/09/2025",
+      "value": "2977.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/09/2025",
+      "value": "3018.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/09/2025",
+      "value": "2975.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/09/2025",
+      "value": "2957.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/09/2025",
+      "value": "2926.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/09/2025",
+      "value": "2984.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/09/2025",
+      "value": "2910.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/09/2025",
+      "value": "2923.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/09/2025",
+      "value": "3010.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/09/2025",
+      "value": "2933.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/09/2025",
+      "value": "2973.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/09/2025",
+      "value": "3009.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/10/2025",
+      "value": "3025.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/10/2025",
+      "value": "3100.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/10/2025",
+      "value": "3056.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/10/2025",
+      "value": "3069.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/10/2025",
+      "value": "3085.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/10/2025",
+      "value": "3092.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/10/2025",
+      "value": "3110.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/10/2025",
+      "value": "3112.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/10/2025",
+      "value": "3118.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/10/2025",
+      "value": "3048.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/10/2025",
+      "value": "3150.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/10/2025",
+      "value": "3099.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/10/2025",
+      "value": "3078.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/10/2025",
+      "value": "3158.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/10/2025",
+      "value": "3325.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/10/2025",
+      "value": "3323.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/10/2025",
+      "value": "3219.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/10/2025",
+      "value": "3225.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/10/2025",
+      "value": "3279.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/10/2025",
+      "value": "3163.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/10/2025",
+      "value": "3258.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/10/2025",
+      "value": "3138.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "31/10/2025",
+      "value": "3168.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/11/2025",
+      "value": "3189.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/11/2025",
+      "value": "3240.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/11/2025",
+      "value": "3188.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/11/2025",
+      "value": "3184.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/11/2025",
+      "value": "3188.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/11/2025",
+      "value": "3294.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/11/2025",
+      "value": "3170.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/11/2025",
+      "value": "3179.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/11/2025",
+      "value": "3178.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/11/2025",
+      "value": "3253.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/11/2025",
+      "value": "3229.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/11/2025",
+      "value": "3123.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/11/2025",
+      "value": "3158.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/11/2025",
+      "value": "3139.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/11/2025",
+      "value": "3117.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/11/2025",
+      "value": "3135.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "25/11/2025",
+      "value": "3116.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/11/2025",
+      "value": "3193.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/11/2025",
+      "value": "3190.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/11/2025",
+      "value": "3254.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "01/12/2025",
+      "value": "3314.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/12/2025",
+      "value": "3350.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/12/2025",
+      "value": "3239.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/12/2025",
+      "value": "3224.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/12/2025",
+      "value": "3221.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/12/2025",
+      "value": "3255.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/12/2025",
+      "value": "3261.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "10/12/2025",
+      "value": "3258.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "11/12/2025",
+      "value": "3319.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/12/2025",
+      "value": "3240.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/12/2025",
+      "value": "3125.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/12/2025",
+      "value": "3025.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "17/12/2025",
+      "value": "3033.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "18/12/2025",
+      "value": "3034.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/12/2025",
+      "value": "3039.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/12/2025",
+      "value": "3033.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/12/2025",
+      "value": "3086.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "24/12/2025",
+      "value": "3059.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/12/2025",
+      "value": "3055.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/12/2025",
+      "value": "3098.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "31/12/2025",
+      "value": "3063.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/01/2026",
+      "value": "3105.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "05/01/2026",
+      "value": "3127.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "06/01/2026",
+      "value": "3206.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "07/01/2026",
+      "value": "3164.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "08/01/2026",
+      "value": "3106.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "09/01/2026",
+      "value": "3101.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "12/01/2026",
+      "value": "3149.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "13/01/2026",
+      "value": "3259.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "14/01/2026",
+      "value": "3237.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "15/01/2026",
+      "value": "3288.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "16/01/2026",
+      "value": "3201.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "19/01/2026",
+      "value": "3183.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "20/01/2026",
+      "value": "3152.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "21/01/2026",
+      "value": "3152.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "22/01/2026",
+      "value": "3150.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "23/01/2026",
+      "value": "3220.50",
+      "source": "Zinc"
+    },
+    {
+      "date": "26/01/2026",
+      "value": "3328.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "27/01/2026",
+      "value": "3292.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "28/01/2026",
+      "value": "3358.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "29/01/2026",
+      "value": "3485.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "30/01/2026",
+      "value": "3343.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "02/02/2026",
+      "value": "3370.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "03/02/2026",
+      "value": "3288.00",
+      "source": "Zinc"
+    },
+    {
+      "date": "04/02/2026",
+      "value": "3333.00",
+      "source": "Zinc"
+    }
+  ],
+  "fetched_at": "2026-02-05T10:09:34.051736",
+  "saved_to_db": 83
+}
