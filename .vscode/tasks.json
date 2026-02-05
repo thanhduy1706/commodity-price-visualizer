@@ -4,7 +4,7 @@
     {
       "label": "Run Frontend (Next.js)",
       "type": "shell",
-      "command": "bun run dev",
+      "command": "yarn dev",
       "problemMatcher": [],
       "presentation": {
         "echo": true,
@@ -78,7 +78,7 @@
     {
       "label": "Install Frontend Dependencies",
       "type": "shell",
-      "command": "bun install",
+      "command": "yarn install",
       "problemMatcher": [],
       "presentation": {
         "echo": true,

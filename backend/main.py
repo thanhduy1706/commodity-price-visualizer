@@ -22,8 +22,11 @@ from database import (
     log_fetch_operation,
     get_all_commodity_data,
     get_latest_prices,
-    get_data_summary
+    get_data_summary,
+    log_change_event
 )
+from pydantic import BaseModel
+from typing import List
 
 app = FastAPI(title="LME Data API")
 
@@ -136,10 +139,12 @@ async def fetch_oil_price_data_with_playwright():
 
         try:
             print("[Playwright] Navigating to oilprice.com...")
-            await page.goto("https://oilprice.com/", wait_until="networkidle", timeout=120000)
+            # Use domcontentloaded instead of networkidle to avoid timeouts from ads/trackers
+            await page.goto("https://oilprice.com/", wait_until="domcontentloaded", timeout=60000)
 
             print("[Playwright] Waiting for page to load...")
             await asyncio.sleep(2)
+
 
             print("[Playwright] Fetching CSRF token...")
             # Fetch CSRF token from the dedicated endpoint
@@ -284,6 +289,21 @@ async def fetch_lme_data_with_playwright(start_date: str, end_date: str, source:
             await browser.close()
             print(f"[Playwright] Error: {str(e)}")
             raise HTTPException(status_code=500, detail=f"Failed to fetch data: {str(e)}")
+
+class ChangeLogRequest(BaseModel):
+    summary: str
+    details: List[str]
+
+@app.post("/api/logs/change")
+async def create_change_log(request: ChangeLogRequest):
+    """Log a data change event"""
+    try:
+        success = log_change_event(request.summary, request.details)
+        if not success:
+            raise HTTPException(status_code=500, detail="Failed to save log to database")
+        return {"status": "success", "message": "Log saved"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 def create_oil_price_excel(data: dict) -> bytes:
     """Create Excel file from oil price data"""

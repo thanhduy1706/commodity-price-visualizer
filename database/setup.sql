@@ -62,6 +62,15 @@ CREATE INDEX idx_commodity_prices_commodity ON commodity_prices(commodity_id);
 CREATE INDEX idx_commodity_prices_combo ON commodity_prices(commodity_id, price_date DESC);
 CREATE INDEX idx_fetch_logs_date ON fetch_logs(fetched_at DESC);
 
+-- Table: change_logs (track application level data changes)
+CREATE TABLE IF NOT EXISTS change_logs (
+    id SERIAL PRIMARY KEY,
+    summary TEXT NOT NULL,
+    details TEXT[], -- Array of strings for detailed lines
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+CREATE INDEX IF NOT EXISTS idx_change_logs_created_at ON change_logs(created_at DESC);
+
 -- ============================================
 -- 4. INSERT REFERENCE DATA
 -- ============================================

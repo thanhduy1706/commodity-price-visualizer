@@ -274,6 +274,26 @@ def get_data_summary() -> Dict:
 
         return summary
 
+
     except Exception as e:
         print(f"[DB] Error getting summary: {str(e)}")
         return {'total_commodities': 0, 'commodities': []}
+
+def log_change_event(summary: str, details: List[str]):
+    """Log a change event to the database"""
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        cursor.execute(
+            "INSERT INTO change_logs (summary, details) VALUES (%s, %s)",
+            (summary, details)
+        )
+
+        conn.commit()
+        cursor.close()
+        conn.close()
+        return True
+    except Exception as e:
+        print(f"[DB] Error logging change: {str(e)}")
+        return False
