@@ -111,7 +111,10 @@ pipeline {
         stage('Backend') {
           steps {
             dir('backend') {
-              sh "docker-compose up -d --build"
+              sh """
+                docker rm -f commodity-visualizer-be || true
+                docker-compose up -d --build
+              """
             }
           }
         }
