@@ -364,6 +364,10 @@ export default function LMEDataFetcherRedux() {
 
   // GSAP Animations
   useGSAP(() => {
+    // Check for reduced motion preference
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)")
+    if (mediaQuery.matches) return
+
     // Initial entrance animation
     const tl = gsap.timeline({ defaults: { ease: "power3.out" } })
 
@@ -376,31 +380,41 @@ export default function LMEDataFetcherRedux() {
       { y: 0, opacity: 1, stagger: 0.1, duration: 0.6 }, "-=0.4"
     )
     .fromTo(".gsap-action-btn",
-      { y: 20, opacity: 0, scale: 0.9 },
-      { y: 0, opacity: 1, scale: 1, stagger: 0.1, duration: 0.5 }, "-=0.4"
+      { y: 20, opacity: 0, scale: 0.95 },
+      { y: 0, opacity: 1, scale: 1, stagger: 0.05, duration: 0.5 }, "-=0.4"
     )
 
   }, { scope: containerRef })
 
   // Animate chart appearance when it shows
   useGSAP(() => {
-    if (showChart && chartRef.current) {
-      gsap.from(chartRef.current, {
-        opacity: 0,
-        y: 30,
-        duration: 0.8,
-        ease: "power2.out",
-        delay: 0.2
-      })
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)")
+    if (mediaQuery.matches || !chartRef.current) return
+
+    if (showChart) {
+      gsap.fromTo(chartRef.current,
+        { opacity: 0, y: 30, scale: 0.98 },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 0.8,
+          ease: "expo.out", // Smoother ease
+          delay: 0.1
+        }
+      )
     }
   }, [showChart])
 
   // Animate analytics panel
   useGSAP(() => {
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)")
+    if (mediaQuery.matches) return
+
     if (showAnalytics) {
       gsap.fromTo(".gsap-analytics-panel",
-        { height: 0, opacity: 0 },
-        { height: "auto", opacity: 1, duration: 0.4, ease: "power2.out" }
+        { height: 0, opacity: 0, scaleY: 0.95, transformOrigin: "top" },
+        { height: "auto", opacity: 1, scaleY: 1, duration: 0.6, ease: "power4.out" }
       )
     }
   }, [showAnalytics])
@@ -604,7 +618,8 @@ export default function LMEDataFetcherRedux() {
     try {
       const dataUrl = await toPng(chartRef.current, {
         backgroundColor: "#ffffff",
-        pixelRatio: 2
+        pixelRatio: 20,
+        cacheBust: true,
       })
 
       const a = document.createElement("a")
@@ -668,7 +683,7 @@ export default function LMEDataFetcherRedux() {
               onClick={handleFetchFresh}
               disabled={loading}
               size="lg"
-              className="flex-1 h-12 sm:h-14 text-sm sm:text-base font-semibold bg-gradient-to-r from-blue-700 to-indigo-800 hover:from-blue-600 hover:to-indigo-700 text-white shadow-lg shadow-blue-900/20 hover:shadow-blue-900/40 border border-white/10 transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] gsap-action-btn group overflow-hidden relative rounded-xl"
+              className="flex-1 h-12 sm:h-14 text-sm sm:text-base font-semibold bg-gradient-to-r from-blue-700 to-indigo-800 hover:from-blue-600 hover:to-indigo-700 text-white shadow-lg shadow-blue-900/20 hover:shadow-blue-900/40 border border-white/10 transition-all duration-500 ease-out transform hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97] gsap-action-btn group overflow-hidden relative rounded-xl"
             >
               {/* Background shine effect */}
               <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/10 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
@@ -685,8 +700,8 @@ export default function LMEDataFetcherRedux() {
                 </div>
               ) : (
                 <div className="flex items-center gap-3 relative z-10">
-                  <div className="bg-white/10 p-1.5 rounded-lg group-hover:bg-white/20 transition-colors">
-                     <ArrowPathIcon className="h-5 w-5 group-hover:rotate-180 transition-transform duration-700" />
+                  <div className="bg-white/10 p-1.5 rounded-lg group-hover:bg-white/20 transition-colors duration-300">
+                     <ArrowPathIcon className="h-5 w-5 group-hover:rotate-180 transition-transform duration-700 ease-out" />
                   </div>
                   <div className="flex flex-col items-start leading-none text-left">
                      <span>Update Market Data</span>
@@ -696,17 +711,17 @@ export default function LMEDataFetcherRedux() {
             </Button>
 
             {/* Export Actions Group */}
-            <div className="flex bg-slate-100 dark:bg-slate-800 p-1 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm shrink-0">
+            <div className="flex bg-slate-100 dark:bg-slate-800 p-1 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm shrink-0 transition-shadow hover:shadow-md duration-300">
               <Button
                 onClick={handleDownloadExcel}
                 disabled={loading || filteredChartData.length === 0}
                 variant="ghost"
                 size="lg"
-                className="h-12 px-4 text-slate-600 hover:text-blue-700 hover:bg-white dark:hover:bg-slate-700 dark:text-slate-400 rounded-lg transition-all gsap-action-btn"
+                className="h-12 px-4 text-slate-600 hover:text-blue-700 hover:bg-white dark:hover:bg-slate-700 dark:text-slate-400 rounded-lg transition-all duration-300 ease-out active:scale-95 gsap-action-btn"
                 title="Export Excel"
               >
                 <div className="flex flex-col items-center gap-1">
-                   <DocumentTextIcon className="h-5 w-5" />
+                   <DocumentTextIcon className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
                    <span className="text-[10px] font-medium hidden sm:block">Excel</span>
                 </div>
               </Button>
@@ -716,11 +731,11 @@ export default function LMEDataFetcherRedux() {
                 disabled={loading || filteredChartData.length === 0}
                 variant="ghost"
                 size="lg"
-                className="h-12 px-4 text-slate-600 hover:text-purple-700 hover:bg-white dark:hover:bg-slate-700 dark:text-slate-400 rounded-lg transition-all gsap-action-btn"
+                className="h-12 px-4 text-slate-600 hover:text-purple-700 hover:bg-white dark:hover:bg-slate-700 dark:text-slate-400 rounded-lg transition-all duration-300 ease-out active:scale-95 gsap-action-btn"
                 title="Export PNG"
               >
                 <div className="flex flex-col items-center gap-1">
-                   <PhotoIcon className="h-5 w-5" />
+                   <PhotoIcon className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
                    <span className="text-[10px] font-medium hidden sm:block">PNG</span>
                 </div>
               </Button>
@@ -730,11 +745,11 @@ export default function LMEDataFetcherRedux() {
                 disabled={loading || filteredChartData.length === 0}
                 variant="ghost"
                 size="lg"
-                className="h-12 px-4 text-slate-600 hover:text-green-700 hover:bg-white dark:hover:bg-slate-700 dark:text-slate-400 rounded-lg transition-all gsap-action-btn"
+                className="h-12 px-4 text-slate-600 hover:text-green-700 hover:bg-white dark:hover:bg-slate-700 dark:text-slate-400 rounded-lg transition-all duration-300 ease-out active:scale-95 gsap-action-btn"
                 title="Copy to Clipboard"
               >
                 <div className="flex flex-col items-center gap-1">
-                   <ClipboardDocumentIcon className="h-5 w-5" />
+                   <ClipboardDocumentIcon className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
                    <span className="text-[10px] font-medium hidden sm:block">Copy</span>
                 </div>
               </Button>
@@ -745,7 +760,7 @@ export default function LMEDataFetcherRedux() {
           {loading && (
             <div className="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
               <div
-                className="bg-blue-600 h-2 rounded-full transition-all duration-300 ease-out"
+                className="bg-blue-600 h-2 rounded-full transition-all duration-500 ease-in-out"
                 style={{ width: `${loadingProgress}%` }}
               />
             </div>
@@ -799,25 +814,25 @@ export default function LMEDataFetcherRedux() {
                       <div className="bg-white dark:bg-slate-900 rounded-xl p-1 shadow-sm border border-slate-200 dark:border-slate-800 flex items-center justify-between sm:justify-start">
                         <button
                           onClick={() => setDisplayMode("absolute")}
-                          className={`flex-1 sm:flex-none px-4 py-2 text-xs font-semibold rounded-lg transition-all duration-200 cursor-pointer flex items-center justify-center gap-2 ${
+                          className={`flex-1 sm:flex-none px-4 py-2 text-xs font-semibold rounded-lg transition-all duration-300 ease-out cursor-pointer flex items-center justify-center gap-2 active:scale-95 ${
                             displayMode === "absolute"
-                              ? "bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 shadow-inner"
-                              : "text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800"
+                              ? "bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 shadow-inner scale-100"
+                              : "text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 hover:scale-105"
                           }`}
                         >
-                          <ArrowTrendingUpIcon className={`h-4 w-4 ${displayMode === "absolute" ? "text-blue-600 dark:text-blue-400" : ""}`} />
+                          <ArrowTrendingUpIcon className={`h-4 w-4 transition-colors duration-300 ${displayMode === "absolute" ? "text-blue-600 dark:text-blue-400" : ""}`} />
                           <span>Absolute</span>
                         </button>
                         <div className="w-px h-4 bg-slate-200 dark:bg-slate-800 mx-1 hidden sm:block"></div>
                         <button
                           onClick={() => setDisplayMode("indexed")}
-                          className={`flex-1 sm:flex-none px-4 py-2 text-xs font-semibold rounded-lg transition-all duration-200 cursor-pointer flex items-center justify-center gap-2 ${
+                          className={`flex-1 sm:flex-none px-4 py-2 text-xs font-semibold rounded-lg transition-all duration-300 ease-out cursor-pointer flex items-center justify-center gap-2 active:scale-95 ${
                             displayMode === "indexed"
-                              ? "bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 shadow-inner"
-                              : "text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800"
+                              ? "bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 shadow-inner scale-100"
+                              : "text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 hover:scale-105"
                           }`}
                         >
-                          <ChartBarIcon className={`h-4 w-4 ${displayMode === "indexed" ? "text-purple-600 dark:text-purple-400" : ""}`} />
+                          <ChartBarIcon className={`h-4 w-4 transition-colors duration-300 ${displayMode === "indexed" ? "text-purple-600 dark:text-purple-400" : ""}`} />
                           <span>Indexed (100)</span>
                         </button>
                       </div>
@@ -828,19 +843,19 @@ export default function LMEDataFetcherRedux() {
                         size="sm"
                         onClick={() => setShowAnalytics(!showAnalytics)}
                         className={cn(
-                          "h-[42px] px-4 rounded-xl border transition-all text-xs font-semibold",
+                          "h-[42px] px-4 rounded-xl border transition-all duration-300 ease-out active:scale-95 text-xs font-semibold",
                           showAnalytics
                             ? "bg-white dark:bg-slate-800 border-amber-200 dark:border-amber-900/50 text-amber-700 dark:text-amber-400 shadow-sm"
-                            : "border-transparent bg-transparent hover:bg-white/50 dark:hover:bg-slate-800/50 text-slate-500"
+                            : "border-transparent bg-transparent hover:bg-white/50 dark:hover:bg-slate-800/50 text-slate-500 hover:text-slate-700"
                         )}
                       >
-                         <PresentationChartLineIcon className={cn("h-4 w-4 mr-2", showAnalytics && "text-amber-500")} />
+                         <PresentationChartLineIcon className={cn("h-4 w-4 mr-2 transition-colors duration-300", showAnalytics && "text-amber-500")} />
                          Analytics
                       </Button>
                     </div>
 
                     {/* Right Group: Date Filters */}
-                    <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 bg-white dark:bg-slate-900 p-1 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800">
+                    <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 bg-white dark:bg-slate-900 p-1 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 transition-shadow hover:shadow-md duration-300">
                        <Popover>
                         <PopoverTrigger asChild>
                           <Button
@@ -848,7 +863,7 @@ export default function LMEDataFetcherRedux() {
                             variant={"ghost"}
                             size="sm"
                             className={cn(
-                              "justify-start text-left font-normal h-9 rounded-lg px-3 text-xs w-full sm:w-[220px]",
+                              "justify-start text-left font-normal h-9 rounded-lg px-3 text-xs w-full sm:w-[220px] transition-all duration-300 ease-out active:scale-95",
                               !dateRange && "text-muted-foreground",
                               dateFilter === "Custom" && "bg-blue-50 text-blue-700 dark:bg-blue-900/20 dark:text-blue-400"
                             )}
@@ -892,10 +907,10 @@ export default function LMEDataFetcherRedux() {
                                 setDateFilter(filter.label)
                                 setDateRange(undefined)
                               }}
-                              className={`flex-1 sm:flex-none px-2.5 py-1.5 text-[10px] font-bold uppercase tracking-wider rounded-lg transition-all cursor-pointer ${
+                              className={`flex-1 sm:flex-none px-2.5 py-1.5 text-[10px] font-bold uppercase tracking-wider rounded-lg transition-all duration-300 ease-out cursor-pointer active:scale-95 ${
                                 dateFilter === filter.label
                                   ? "bg-slate-800 text-white shadow-md transform scale-105"
-                                  : "text-slate-500 hover:text-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 dark:text-slate-400"
+                                  : "text-slate-500 hover:text-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 dark:text-slate-400 hover:scale-105"
                               }`}
                             >
                               {filter.label}
@@ -925,7 +940,7 @@ export default function LMEDataFetcherRedux() {
                       <span className="text-xs font-medium text-slate-500 uppercase tracking-wide">Metals</span>
                       <button
                         onClick={() => toggleSeries('copper')}
-                        className={`flex items-center gap-2 transition-opacity ${visibleSeries.copper ? 'opacity-100' : 'opacity-40 grayscale'}`}
+                        className={`flex items-center gap-2 transition-all duration-300 ease-out active:scale-95 ${visibleSeries.copper ? 'opacity-100 scale-100' : 'opacity-40 grayscale hover:opacity-70 hover:scale-105'}`}
                         title="Toggle Copper"
                       >
                         <div className="w-3 h-3 rounded-full" style={{ backgroundColor: COLORS.copper }}></div>
@@ -933,7 +948,7 @@ export default function LMEDataFetcherRedux() {
                       </button>
                       <button
                         onClick={() => toggleSeries('zinc')}
-                        className={`flex items-center gap-2 transition-opacity ${visibleSeries.zinc ? 'opacity-100' : 'opacity-40 grayscale'}`}
+                        className={`flex items-center gap-2 transition-all duration-300 ease-out active:scale-95 ${visibleSeries.zinc ? 'opacity-100 scale-100' : 'opacity-40 grayscale hover:opacity-70 hover:scale-105'}`}
                         title="Toggle Zinc"
                       >
                         <div className="w-3 h-3 rounded-full" style={{ backgroundColor: COLORS.zinc }}></div>
@@ -944,7 +959,7 @@ export default function LMEDataFetcherRedux() {
                       <span className="text-xs font-medium text-slate-500 uppercase tracking-wide">Energy</span>
                       <button
                         onClick={() => toggleSeries('oil')}
-                        className={`flex items-center gap-2 transition-opacity ${visibleSeries.oil ? 'opacity-100' : 'opacity-40 grayscale'}`}
+                        className={`flex items-center gap-2 transition-all duration-300 ease-out active:scale-95 ${visibleSeries.oil ? 'opacity-100 scale-100' : 'opacity-40 grayscale hover:opacity-70 hover:scale-105'}`}
                         title="Toggle Oil"
                       >
                         <div className="w-3 h-3 rounded-full" style={{ backgroundColor: COLORS.oil }}></div>
