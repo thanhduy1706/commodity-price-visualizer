@@ -50,7 +50,7 @@ import {
   AnalyticsPanel,
 } from "@/components/dashboard"
 
-export default function LMEDataFetcherRedux() {
+export default function CommodityDashboard() {
   const dispatch = useAppDispatch()
   const chartRef = useRef<HTMLDivElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)

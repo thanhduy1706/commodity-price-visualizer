@@ -1,9 +1,9 @@
-import LMEDataFetcherRedux from "@/components/LMEDataFetcherRedux"
+import CommodityDashboard from "@/components/CommodityDashboard"
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <LMEDataFetcherRedux />
+      <CommodityDashboard />
     </main>
   )
 }
