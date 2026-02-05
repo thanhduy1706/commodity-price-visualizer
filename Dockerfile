@@ -22,6 +22,7 @@ RUN bun run build --webpack
 # --- Production Stage ---
 FROM oven/bun:1-alpine AS runner
 ARG NODE_ENV
+ENV HOSTNAME="0.0.0.0"
 
 WORKDIR /app
 
