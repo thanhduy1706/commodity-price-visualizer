@@ -3,9 +3,13 @@ FROM node:20-alpine AS builder
 
 # Accept build-time arguments
 ARG NODE_ENV
+ARG NEXT_PUBLIC_API_URL
+ARG NEXT_PUBLIC_BASE_URL
 
 # Convert build args to environment variables
 ENV NODE_ENV=$NODE_ENV
+ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
+ENV NEXT_PUBLIC_BASE_URL=$NEXT_PUBLIC_BASE_URL
 
 WORKDIR /app
 

@@ -74,6 +74,8 @@ pipeline {
 
                   docker build \\
                     --build-arg NODE_ENV="\${NODE_ENV}" \\
+                    --build-arg NEXT_PUBLIC_API_URL="\${NEXT_PUBLIC_API_URL}" \\
+                    --build-arg NEXT_PUBLIC_BASE_URL="\${NEXT_PUBLIC_BASE_URL}" \\
                     -t $IMAGE_NAME_FE:$DATETIME \\
                     -t $IMAGE_NAME_FE:latest \\
                     "$FE_DIR"
