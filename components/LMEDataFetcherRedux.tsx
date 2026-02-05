@@ -313,6 +313,23 @@ export default function LMEDataFetcherRedux() {
   const [displayMode, setDisplayMode] = useState<DisplayMode>("absolute")
   const [showAnalytics, setShowAnalytics] = useState(false)
   const [chartReady, setChartReady] = useState(false)
+  const [calendarMonths, setCalendarMonths] = useState(2)
+
+  // Handle Window Resize for Calendar
+  useEffect(() => {
+    const handleResize = () => {
+      setCalendarMonths(window.innerWidth < 640 ? 1 : 2)
+    }
+    // Set initial
+    if (typeof window !== "undefined") {
+      handleResize()
+      window.addEventListener("resize", handleResize)
+    }
+    return () => {
+      if (typeof window !== "undefined") window.removeEventListener("resize", handleResize)
+    }
+  }, [])
+
   const [visibleSeries, setVisibleSeries] = useState({
     copper: true,
     zinc: true,
@@ -620,38 +637,38 @@ export default function LMEDataFetcherRedux() {
   }
 
   return (
-    <div ref={containerRef} className="container max-w-9xl mx-auto py-4 px-4 h-screen max-h-screen flex flex-col">
+    <div ref={containerRef} className="container max-w-9xl mx-auto py-2 sm:py-4 px-2 sm:px-4 h-[100dvh] sm:h-screen sm:max-h-screen flex flex-col">
       <Card className="border shadow-sm bg-white dark:bg-slate-900 overflow-hidden flex flex-col flex-1 min-h-0">
-        <CardHeader className="border-b bg-slate-50/50 dark:bg-slate-800/50 pb-4 shrink-0">
-          <div className="flex flex-col md:flex-row justify-between md:items-center gap-4">
+        <CardHeader className="border-b bg-slate-50/50 dark:bg-slate-800/50 p-3 sm:pb-4 shrink-0">
+          <div className="flex flex-col md:flex-row justify-between md:items-center gap-3 md:gap-4">
             <div>
-              <CardTitle className="text-xl font-bold text-slate-800 dark:text-slate-100 gsap-header-item">
+              <CardTitle className="text-lg sm:text-xl font-bold text-slate-800 dark:text-slate-100 gsap-header-item">
                 Commodity Market
               </CardTitle>
             </div>
 
             {dataSource && lastFetchTime && (
-              <div className="flex flex-col items-end gsap-header-item">
-                 <div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 dark:bg-blue-900/20 dark:text-blue-400 dark:border-blue-800">
+              <div className="flex flex-row md:flex-col items-center md:items-end justify-between md:justify-start gap-2 gsap-header-item">
+                 <div className="inline-flex items-center px-2 sm:px-3 py-1 rounded-full text-[10px] sm:text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 dark:bg-blue-900/20 dark:text-blue-400 dark:border-blue-800">
                     <CircleStackIcon className="w-3 h-3 mr-1.5" />
-                    Source: {dataSource === 'fresh' ? 'Live API' : dataSource === 'database' ? 'Database' : 'Cache'}
+                    <span className="hidden sm:inline">Source: </span>{dataSource === 'fresh' ? 'Live API' : dataSource === 'database' ? 'Database' : 'Cache'}
                  </div>
-                 <p className="text-xs text-slate-400 mt-1.5">
-                    Updated: {new Date(lastFetchTime).toLocaleString()}
+                 <p className="text-[10px] sm:text-xs text-slate-400 mt-0 md:mt-1.5">
+                    {new Date(lastFetchTime).toLocaleString()}
                  </p>
               </div>
             )}
           </div>
         </CardHeader>
 
-        <CardContent className="space-y-4 pt-4 flex-1 flex flex-col min-h-0 overflow-y-auto">
+        <CardContent className="space-y-3 sm:space-y-4 pt-3 sm:pt-4 flex-1 flex flex-col min-h-0 overflow-y-auto">
           {/* Action Area */}
-          <div className="flex flex-col md:flex-row gap-4 shrink-0">
+          <div className="flex flex-col md:flex-row gap-3 md:gap-4 shrink-0">
             <Button
               onClick={handleFetchFresh}
               disabled={loading}
               size="lg"
-              className="flex-1 h-14 text-base font-semibold bg-gradient-to-r from-blue-700 to-indigo-800 hover:from-blue-600 hover:to-indigo-700 text-white shadow-lg shadow-blue-900/20 hover:shadow-blue-900/40 border border-white/10 transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] gsap-action-btn group overflow-hidden relative rounded-xl"
+              className="flex-1 h-12 sm:h-14 text-sm sm:text-base font-semibold bg-gradient-to-r from-blue-700 to-indigo-800 hover:from-blue-600 hover:to-indigo-700 text-white shadow-lg shadow-blue-900/20 hover:shadow-blue-900/40 border border-white/10 transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] gsap-action-btn group overflow-hidden relative rounded-xl"
             >
               {/* Background shine effect */}
               <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/10 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
@@ -737,34 +754,10 @@ export default function LMEDataFetcherRedux() {
           {/* Chart Section */}
           {showChart && (
             <div ref={chartRef} className="mt-4 border border-slate-200 dark:border-slate-700 rounded-xl p-4 bg-white dark:bg-slate-900 flex-1 flex flex-col min-h-0">
-              <div className="flex flex-col lg:flex-row gap-6 h-full">
+              <div className="flex flex-col lg:flex-row gap-6 lg:h-full h-auto">
                 {/* Left Sidebar - Explanation Panel */}
-                <div className="lg:w-64 shrink-0 order-2 lg:order-1 border-t lg:border-t-0 lg:border-r border-slate-200 dark:border-slate-700 pt-6 lg:pt-0 lg:pr-6">
+                <div className="lg:w-64 shrink-0 order-first border-t lg:border-t-0 lg:border-r border-slate-200 dark:border-slate-700 pt-6 lg:pt-0 lg:pr-6">
                   <div className="flex flex-col gap-6">
-                    {/* Commodities Info */}
-                    <div className="space-y-3">
-                         <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-300">Tracked Commodities</h4>
-                      <div className="space-y-2 text-xs text-slate-500 dark:text-slate-400">
-                        <div className="flex items-start gap-2">
-                          <div className="w-2 h-2 rounded-full mt-1 flex-shrink-0" style={{ backgroundColor: COLORS.copper }}></div>
-                          <div>
-                            <span className="font-medium text-slate-600 dark:text-slate-300">Copper (LME)</span>
-                          </div>
-                          </div>
-                        <div className="flex items-start gap-2">
-                          <div className="w-2 h-2 rounded-full mt-1 flex-shrink-0" style={{ backgroundColor: COLORS.zinc }}></div>
-                          <div>
-                            <span className="font-medium text-slate-600 dark:text-slate-300">Zinc (LME)</span>
-                          </div>
-                        </div>
-                        <div className="flex items-start gap-2">
-                          <div className="w-2 h-2 rounded-full mt-1 flex-shrink-0" style={{ backgroundColor: COLORS.oil }}></div>
-                          <div>
-                            <span className="font-medium text-slate-600 dark:text-slate-300">Crude Oil (WTI)</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
 
                     {/* Mode Explanation */}
                     <div className="space-y-3">
@@ -795,7 +788,7 @@ export default function LMEDataFetcherRedux() {
                 </div>
 
                 {/* Right Content - Chart & Controls */}
-                <div className="flex-1 min-w-0 order-1 lg:order-2 flex flex-col min-h-0">
+                <div className="flex-1 min-w-0 order-last flex flex-col min-h-0">
                   {/* Chart Controls Toolbar */}
                   <div className="mb-4 p-1.5 bg-slate-100/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-2xl flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-4 w-full backdrop-blur-sm shrink-0">
 
@@ -884,7 +877,7 @@ export default function LMEDataFetcherRedux() {
                               setDateRange(range)
                               if (range) setDateFilter("Custom")
                             }}
-                            numberOfMonths={2}
+                            numberOfMonths={calendarMonths}
                           />
                         </PopoverContent>
                       </Popover>
@@ -962,7 +955,7 @@ export default function LMEDataFetcherRedux() {
 
                   {/* Chart */}
                   {displayData.length > 0 ? (
-                    <div className="w-full flex-1 min-h-0 bg-slate-50/30 rounded-lg">
+                    <div className="w-full h-[400px] lg:h-auto lg:flex-1 min-h-0 bg-slate-50/30 rounded-lg">
                       {chartReady ? (
                         <ResponsiveContainer width="100%" height="100%">
                           <LineChart
