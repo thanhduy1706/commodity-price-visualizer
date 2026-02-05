@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   description: "Real-time commodity price data with interactive charts",
 }
 
+import { Toaster } from "@/components/ui/sonner"
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -17,6 +19,7 @@ export default function RootLayout({
       <body className="antialiased bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
         <ReduxProvider>
           {children}
+          <Toaster />
         </ReduxProvider>
       </body>
     </html>

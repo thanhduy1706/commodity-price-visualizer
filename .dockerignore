@@ -1,0 +1,12 @@
+.git
+node_modules
+.vscode
+.env
+Dockerfile
+docker-compose.yml
+README.md
+
+.env*
+.flaskenv*
+!.env.project
+!.env.vault

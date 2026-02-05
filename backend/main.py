@@ -32,9 +32,14 @@ DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
 
 # CORS configuration for Next.js frontend
+FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:3000")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=[
+        FRONTEND_URL,
+        "http://localhost:3000",
+        "https://cv.ndtduy.live"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
