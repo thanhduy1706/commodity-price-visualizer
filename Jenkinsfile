@@ -73,11 +73,6 @@ pipeline {
                   fi
 
                   docker build \\
-                    --build-arg NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="\${NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}" \\
-                    --build-arg CLERK_SECRET_KEY="\${CLERK_SECRET_KEY}" \\
-                    --build-arg NEXT_PUBLIC_BASE_URL="\${NEXT_PUBLIC_BASE_URL}" \\
-                    --build-arg NEXT_PUBLIC_CHATBOT_API_URL="\${NEXT_PUBLIC_CHATBOT_API_URL}" \\
-                    --build-arg NEXT_PUBLIC_NOTIFICATION_BASE_URL="\${NEXT_PUBLIC_NOTIFICATION_BASE_URL}" \\
                     --build-arg NODE_ENV="\${NODE_ENV}" \\
                     -t $IMAGE_NAME_FE:$DATETIME \\
                     -t $IMAGE_NAME_FE:latest \\
