@@ -22,8 +22,18 @@ if not env_loaded:
     print("[DB] Warning: No .env file found")
 
 # Database configuration
+DB_HOST = os.getenv('DATABASE_HOST', 'localhost')
+
+# DOCKER FIX: If running in Docker and host is localhost, switch to host.docker.internal
+# Check for .dockerenv file or common Docker environment variables
+is_docker = os.path.exists('/.dockerenv') or os.environ.get('DOCKER_CONTAINER', False)
+
+if is_docker and (DB_HOST == 'localhost' or DB_HOST == '127.0.0.1'):
+    print(f"[DB] Docker detected: Swapping host '{DB_HOST}' to 'host.docker.internal'")
+    DB_HOST = 'host.docker.internal'
+
 DB_CONFIG = {
-    'host': os.getenv('DATABASE_HOST', 'localhost'),
+    'host': DB_HOST,
     'port': int(os.getenv('DATABASE_PORT', 5432)),
     'database': os.getenv('DATABASE_NAME', 'commodity_data'),
     'user': os.getenv('DATABASE_USERNAME', 'libadmin'),

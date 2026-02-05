@@ -109,39 +109,9 @@ pipeline {
         }
 
         stage('Backend') {
-          stages {
-            stage('Build BE Image') {
-              steps {
-                sh """
-                  echo "Building Backend Docker image..."
-                  docker build \\
-                    -t $IMAGE_NAME_BE:$DATETIME \\
-                    -t $IMAGE_NAME_BE:latest \\
-                    "$BE_DIR"
-                """
-              }
-            }
-
-            stage('Deploy BE Container') {
-              steps {
-                sh """
-                  echo "Deploying Backend Container..."
-                  docker stop "$CONTAINER_NAME_BE" || true
-                  docker rm "$CONTAINER_NAME_BE" || true
-
-                  ENV_OPTS=""
-                  if [ -f "\$ENV_FILE_BE" ]; then
-                     ENV_OPTS="--env-file \$ENV_FILE_BE"
-                  fi
-
-                  docker run -d \\
-                    --name "$CONTAINER_NAME_BE" \\
-                    -p $PORT_BE:8000 \\
-                    \$ENV_OPTS \\
-                    --restart unless-stopped \\
-                    "$IMAGE_NAME_BE:$DATETIME"
-                """
-              }
+          steps {
+            dir('backend') {
+              sh "docker-compose up -d --build"
             }
           }
         }

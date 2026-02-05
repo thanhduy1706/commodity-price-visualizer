@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: commodity-visualizer-be
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_HOST=100.105.169.18
+      - DATABASE_PORT=5432
+      - DATABASE_NAME=commodity_data
+      - DATABASE_USERNAME=libadmin
+      - DATABASE_PASSWORD=Jentle1706
+      - FRONTEND_URL=http://localhost:3000
+    networks:
+      - jenkins_default
+    restart: unless-stopped
+
+networks:
+  jenkins_default:
+    external: true
