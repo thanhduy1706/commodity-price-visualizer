@@ -7,7 +7,7 @@ services:
     ports:
       - "8100:8000"
     environment:
-      - DATABASE_HOST=100.105.169.18
+      - DATABASE_HOST=postgres
       - DATABASE_PORT=5432
       - DATABASE_NAME=commodity_data
       - DATABASE_USERNAME=libadmin
