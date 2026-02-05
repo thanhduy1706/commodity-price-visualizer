@@ -5,7 +5,7 @@ services:
     build: .
     container_name: commodity-visualizer-be
     ports:
-      - "8000:8000"
+      - "8100:8000"
     environment:
       - DATABASE_HOST=100.105.169.18
       - DATABASE_PORT=5432
