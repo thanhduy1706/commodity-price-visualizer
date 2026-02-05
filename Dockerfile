@@ -14,7 +14,7 @@ COPY package.json yarn.lock* ./
 # Enable corepack for modern yarn
 RUN corepack enable && corepack prepare yarn@stable --activate
 
-RUN yarn install --immutable
+RUN yarn install
 
 COPY . .
 
