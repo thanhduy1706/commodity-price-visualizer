@@ -2,40 +2,9 @@
 
 import { useEffect, useState, useMemo, useRef } from "react"
 import { format } from "date-fns"
-import { Calendar as CalendarIcon } from "lucide-react"
 import { DateRange } from "react-day-picker"
-import { cn } from "@/lib/utils"
-import { Calendar } from "@/components/ui/calendar"
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover"
-import { Button } from "@/components/ui/button"
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-} from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"
 import { toast } from "sonner"
-import {
-  CheckCircleIcon,
-  XCircleIcon,
-  ArrowPathIcon,
-  ArrowDownTrayIcon,
-  CircleStackIcon,
-  ArrowTrendingUpIcon,
-  ChartBarIcon,
-  ClipboardDocumentIcon,
-  PhotoIcon,
-  DocumentTextIcon,
-  AdjustmentsHorizontalIcon,
-  PresentationChartLineIcon,
-  SunIcon,
-  MoonIcon
-} from "@heroicons/react/24/outline"
 import {
   LineChart,
   Line,
@@ -46,286 +15,49 @@ import {
   ResponsiveContainer,
   Brush,
   ReferenceLine,
-  Legend,
 } from "recharts"
 import { useAppDispatch, useAppSelector } from "@/lib/redux/hooks"
 import { fetchFreshData, loadFromDatabase, clearError } from "@/lib/redux/slices/commoditySlice"
 import { setShowChart } from "@/lib/redux/slices/uiSlice"
 import { toPng } from "html-to-image"
 import * as XLSX from "xlsx"
+import { useTheme } from "next-themes"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
-import { useTheme } from "next-themes"
 
 gsap.registerPlugin(useGSAP)
 
-// Commodity colors
-const COLORS = {
-  copper: "#C87533",
-  zinc: "#6C8A9B",
-  oil: "#2B2B2B",
-}
+// Chart utilities
+import {
+  DATE_FILTERS,
+  type DateFilterType,
+  type DisplayMode,
+} from "@/lib/chart/constants"
+import { formatCurrency, formatDate } from "@/lib/chart/formatters"
+import { calculateChartData, calculateCorrelation, getChartColors } from "@/lib/chart/calculations"
 
-// Date range filter options
-const DATE_FILTERS = [
-  { label: "1M", months: 1 },
-  { label: "3M", months: 3 },
-  { label: "6M", months: 6 },
-  { label: "YTD", months: -1 }, // Special case
-  { label: "1Y", months: 12 },
-  { label: "Max", months: 0 },
-] as const
+// Chart components
+import { ChartSkeleton, CustomTooltip } from "@/components/chart"
 
-type DateFilterType = typeof DATE_FILTERS[number]["label"] | "Custom"
-type DisplayMode = "absolute" | "indexed"
-
-// Format currency with abbreviation
-function formatCurrency(value: number, isLarge: boolean = false): string {
-  if (value >= 1000 && isLarge) {
-    return `$${(value / 1000).toFixed(1)}k`
-  }
-  return `$${value.toLocaleString()}`
-}
-
-// Format date for X-axis
-function formatDate(dateStr: string): string {
-  const date = new Date(dateStr)
-  return date.toLocaleDateString("en-US", { month: "short", year: "2-digit" })
-}
-
-// Format percentage
-function formatPercent(value: number): string {
-  const sign = value >= 0 ? "+" : ""
-  return `${sign}${value.toFixed(2)}%`
-}
-
-// Calculate indexed values and percentage change
-function calculateChartData(data: any[], mode: DisplayMode) {
-  if (data.length === 0) return []
-
-  // Base values (first item in valid range)
-  const baseitem = data[0]
-  const baseCopper = baseitem?.copper || 1
-  const baseZinc = baseitem?.zinc || 1
-  const baseOil = baseitem?.oil || 1
-
-  return data.map(item => {
-    // Percentage change since start of period
-    const copperPct = item.copper ? ((item.copper - baseCopper) / baseCopper) * 100 : 0
-    const zincPct = item.zinc ? ((item.zinc - baseZinc) / baseZinc) * 100 : 0
-    const oilPct = item.oil ? ((item.oil - baseOil) / baseOil) * 100 : 0
-
-    // Indexed value (Base 100)
-    const copperIndexed = 100 + copperPct
-    const zincIndexed = 100 + zincPct
-    const oilIndexed = 100 + oilPct
-
-    return {
-      ...item,
-      // Values for chart lines
-      copper: mode === "indexed" ? copperIndexed : item.copper,
-      zinc: mode === "indexed" ? zincIndexed : item.zinc,
-      oil: mode === "indexed" ? oilIndexed : item.oil,
-      // Raw values for tooltip
-      rawCopper: item.copper,
-      rawZinc: item.zinc,
-      rawOil: item.oil,
-      // Percentage changes for tooltip
-      pctCopper: copperPct,
-      pctZinc: zincPct,
-      pctOil: oilPct
-    }
-  })
-}
-
-// ... correlation function ...
-// Calculate 30-day rolling correlation
-function calculateCorrelation(data: any[], key1: string, key2: string): number {
-  const validData = data.filter(d => d[key1] != null && d[key2] != null).slice(-30)
-  if (validData.length < 5) return 0
-
-  const x = validData.map(d => d[key1])
-  const y = validData.map(d => d[key2])
-  const n = x.length
-
-  const sumX = x.reduce((a, b) => a + b, 0)
-  const sumY = y.reduce((a, b) => a + b, 0)
-  const sumXY = x.reduce((acc, xi, i) => acc + xi * y[i], 0)
-  const sumX2 = x.reduce((acc, xi) => acc + xi * xi, 0)
-  const sumY2 = y.reduce((acc, yi) => acc + yi * yi, 0)
-
-  const numerator = n * sumXY - sumX * sumY
-  const denominator = Math.sqrt((n * sumX2 - sumX ** 2) * (n * sumY2 - sumY ** 2))
-
-  return denominator === 0 ? 0 : numerator / denominator
-}
-
-// Custom Tooltip Component
-const CustomTooltip = ({ active, payload, label, displayMode, visibleSeries, colors }: any) => {
-  if (!active || !payload || !payload.length) return null
-
-  // Use passed colors or fallback
-  const themeColors = colors || COLORS
-
-  // Helper to find the original raw value and pct from payload
-  // Payload values might be indexed, so we look for custom props we added
-  const dataItem = payload[0].payload
-
-  return (
-    <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg shadow-lg p-4 min-w-[200px]">
-      <p className="font-semibold text-slate-800 dark:text-slate-100 mb-3 pb-2 border-b border-slate-100 dark:border-slate-700">
-        {new Date(label).toLocaleDateString("en-US", {
-          month: "long",
-          day: "numeric",
-          year: "numeric"
-        })}
-      </p>
-
-      <div className="space-y-3">
-        {(visibleSeries.copper || visibleSeries.zinc) && (
-          <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Metals</p>
-        )}
-
-        {/* Copper */}
-        {visibleSeries.copper && dataItem.rawCopper != null && (
-          <div className="flex justify-between items-start">
-            <div className="flex items-center gap-2">
-               <span className="w-2 h-2 rounded-full mt-1" style={{ backgroundColor: themeColors.copper }}></span>
-               <div className="flex flex-col">
-                 <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Copper</span>
-                 <span className={`text-xs ${dataItem.pctCopper >= 0 ? 'text-green-600' : 'text-red-600'}`}>
-                    {formatPercent(dataItem.pctCopper)}
-                 </span>
-               </div>
-            </div>
-            <div className="text-right">
-               <span className="text-sm font-bold text-slate-900 dark:text-slate-100">
-                 {formatCurrency(dataItem.rawCopper)}
-               </span>
-               <span className="text-xs text-slate-400 block">/ tonne</span>
-            </div>
-          </div>
-        )}
-
-        {/* Zinc */}
-        {visibleSeries.zinc && dataItem.rawZinc != null && (
-          <div className="flex justify-between items-start">
-            <div className="flex items-center gap-2">
-               <span className="w-2 h-2 rounded-full mt-1" style={{ backgroundColor: themeColors.zinc }}></span>
-               <div className="flex flex-col">
-                 <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Zinc</span>
-                 <span className={`text-xs ${dataItem.pctZinc >= 0 ? 'text-green-600' : 'text-red-600'}`}>
-                    {formatPercent(dataItem.pctZinc)}
-                 </span>
-               </div>
-            </div>
-            <div className="text-right">
-               <span className="text-sm font-bold text-slate-900 dark:text-slate-100">
-                 {formatCurrency(dataItem.rawZinc)}
-               </span>
-               <span className="text-xs text-slate-400 block">/ tonne</span>
-            </div>
-          </div>
-        )}
-
-        {visibleSeries.oil && (
-          <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider pt-2 border-t border-slate-100 dark:border-slate-700">Energy</p>
-        )}
-
-        {/* Oil */}
-        {visibleSeries.oil && dataItem.rawOil != null && (
-          <div className="flex justify-between items-start">
-             <div className="flex items-center gap-2">
-               <span className="w-2 h-2 rounded-full mt-1" style={{ backgroundColor: themeColors.oil }}></span>
-               <div className="flex flex-col">
-                 <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Crude Oil</span>
-                 <span className={`text-xs ${dataItem.pctOil >= 0 ? 'text-green-600' : 'text-red-600'}`}>
-                    {formatPercent(dataItem.pctOil)}
-                 </span>
-               </div>
-            </div>
-            <div className="text-right">
-               <span className="text-sm font-bold text-slate-900 dark:text-slate-100">
-                 ${dataItem.rawOil.toFixed(2)}
-               </span>
-               <span className="text-xs text-slate-400 block">/ barrel</span>
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  )
-}
-
-
-// Correlation Badge Component
-const CountUp = ({ value, decimals = 2 }: { value: number; decimals?: number }) => {
-  const ref = useRef<HTMLSpanElement>(null)
-
-  useGSAP(() => {
-    const obj = { val: 0 }
-    gsap.to(obj, {
-      val: value,
-      duration: 1.5,
-      ease: "power3.out",
-      onUpdate: () => {
-        if (ref.current) {
-          ref.current.innerText = obj.val.toFixed(decimals)
-        }
-      }
-    })
-  }, [value])
-
-  return <span ref={ref}>0.00</span>
-}
-
-// Correlation Badge Component
-const CorrelationBadge = ({ label, value }: { label: string; value: number }) => {
-  const color = value > 0.5 ? "text-green-600 dark:text-green-400" : value < -0.5 ? "text-red-600 dark:text-red-400" : "text-slate-500 dark:text-slate-400"
-  const bg = value > 0.5 ? "bg-green-50 dark:bg-green-900/10 border-green-100 dark:border-green-800" : value < -0.5 ? "bg-red-50 dark:bg-red-900/10 border-red-100 dark:border-red-800" : "bg-slate-50 dark:bg-slate-800 border-slate-100 dark:border-slate-700"
-
-  return (
-    <div className={`flex items-center justify-between px-3 py-2 rounded-lg border ${bg} transition-transform hover:scale-105 duration-300`}>
-      <span className="text-xs text-slate-600 dark:text-slate-400 font-medium">{label}</span>
-      <span className={`text-sm font-bold ${color}`}>
-        <CountUp value={value} />
-      </span>
-    </div>
-  )
-}
-
-// Loading Skeleton with Shimmer
-const ChartSkeleton = () => (
-  <div className="relative h-full w-full bg-slate-50 dark:bg-slate-800/50 rounded-xl overflow-hidden shadow-inner border border-slate-100 dark:border-slate-800">
-    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full animate-[shimmer_2s_infinite]" />
-    <div className="h-full flex flex-col items-center justify-center text-slate-300 dark:text-slate-600 gap-3">
-      <ChartBarIcon className="h-16 w-16 animate-pulse opacity-50" />
-      <span className="font-medium tracking-wide text-sm animate-pulse">Loading market data...</span>
-    </div>
-  </div>
-)
+// Dashboard components
+import {
+  DashboardHeader,
+  ActionButtons,
+  ChartToolbar,
+  ChartLegend,
+  ExplanationPanel,
+  ChangeLogModal,
+  AnalyticsPanel,
+} from "@/components/dashboard"
 
 export default function LMEDataFetcherRedux() {
   const dispatch = useAppDispatch()
   const chartRef = useRef<HTMLDivElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
-  const { theme, setTheme, resolvedTheme } = useTheme()
+  const { resolvedTheme } = useTheme()
 
   // Dynamic Chart Colors for Dark/Light Mode
-  const chartColors = useMemo(() => {
-    const isDark = resolvedTheme === "dark"
-    return {
-      copper: isDark ? "#E08A4E" : "#C87533", // Dark: Custom Orange | Light: Brown
-      zinc: isDark ? "#9FB6C2" : "#6C8A9B",   // Dark: Muted Blue | Light: Slate Blue
-      oil: isDark ? "#4A4A4A" : "#2B2B2B",    // Dark: Dark Grey | Light: Black
-      grid: isDark ? "#334155" : "#e2e8f0",   // Slate 700 : Slate 200
-      text: isDark ? "#94a3b8" : "#64748b",   // Slate 400 : Slate 500
-      brushFill: isDark ? "#1e293b" : "#f8fafc", // Slate 800 : Slate 50
-      brushStroke: isDark ? "#475569" : "#94a3b8" // Slate 600 : Slate 400
-    }
-  }, [resolvedTheme])
-
-
+  const chartColors = useMemo(() => getChartColors(resolvedTheme === "dark"), [resolvedTheme])
 
   // Local state
   const [loadingProgress, setLoadingProgress] = useState(0)
@@ -334,22 +66,6 @@ export default function LMEDataFetcherRedux() {
   const [displayMode, setDisplayMode] = useState<DisplayMode>("absolute")
   const [showAnalytics, setShowAnalytics] = useState(false)
   const [chartReady, setChartReady] = useState(false)
-  const [calendarMonths, setCalendarMonths] = useState(2)
-
-  // Handle Window Resize for Calendar
-  useEffect(() => {
-    const handleResize = () => {
-      setCalendarMonths(window.innerWidth < 640 ? 1 : 2)
-    }
-    // Set initial
-    if (typeof window !== "undefined") {
-      handleResize()
-      window.addEventListener("resize", handleResize)
-    }
-    return () => {
-      if (typeof window !== "undefined") window.removeEventListener("resize", handleResize)
-    }
-  }, [])
 
   const [visibleSeries, setVisibleSeries] = useState({
     copper: true,
@@ -692,118 +408,18 @@ export default function LMEDataFetcherRedux() {
   return (
     <div ref={containerRef} className="container max-w-9xl mx-auto py-2 sm:py-4 px-2 sm:px-4 h-[100dvh] sm:h-screen sm:max-h-screen flex flex-col">
       <Card className="border shadow-sm bg-white dark:bg-slate-900 overflow-hidden flex flex-col flex-1 min-h-0">
-        <CardHeader className="border-b bg-slate-50/50 dark:bg-slate-800/50 p-3 sm:pb-4 shrink-0">
-          <div className="flex flex-col md:flex-row justify-between md:items-center gap-3 md:gap-4">
-            <div className="flex items-center">
-              <CardTitle className="text-lg sm:text-xl font-bold text-slate-800 dark:text-slate-100 gsap-header-item">
-                Commodity Market
-              </CardTitle>
-              <Button
-                  variant="ghost"
-                  size="sm"
-                  className="h-8 w-8 p-0 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100 ml-3 shrink-0"
-                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                  title="Toggle Theme"
-              >
-                <SunIcon className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                <MoonIcon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                <span className="sr-only">Toggle theme</span>
-              </Button>
-            </div>
-
-            {dataSource && lastFetchTime && (
-              <div className="flex flex-row md:flex-col items-center md:items-end justify-between md:justify-start gap-2 gsap-header-item">
-                 <div className="inline-flex items-center px-2 sm:px-3 py-1 rounded-full text-[10px] sm:text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 dark:bg-blue-900/20 dark:text-blue-400 dark:border-blue-800">
-                    <CircleStackIcon className="w-3 h-3 mr-1.5" />
-                    <span className="hidden sm:inline"></span>{dataSource === 'fresh' ? '  Live API' : dataSource === 'database' ? ' Database' : 'Cache'}
-                 </div>
-                 <p className="text-[10px] sm:text-xs text-slate-400 mt-0 md:mt-1.5">
-                    {new Date(lastFetchTime).toLocaleString()}
-                 </p>
-              </div>
-            )}
-          </div>
-        </CardHeader>
+        <DashboardHeader dataSource={dataSource} lastFetchTime={lastFetchTime} />
 
         <CardContent className="space-y-3 sm:space-y-4 pt-3 sm:pt-4 flex-1 flex flex-col min-h-0 overflow-y-auto">
-          {/* Action Area */}
-          <div className="flex flex-col md:flex-row gap-3 md:gap-4 shrink-0">
-            <Button
-              onClick={handleFetchFresh}
-              disabled={loading}
-              size="lg"
-              className="flex-1 h-12 sm:h-14 text-sm sm:text-base font-semibold bg-gradient-to-r from-blue-700 to-indigo-800 hover:from-blue-600 hover:to-indigo-700 text-white shadow-lg shadow-blue-900/20 hover:shadow-blue-900/40 border border-white/10 transition-all duration-500 ease-out transform hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97] gsap-action-btn group overflow-hidden relative rounded-xl"
-            >
-              {/* Background shine effect */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/10 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-
-              {loading ? (
-                <div className="flex items-center gap-2">
-                  <div className="relative">
-                    <ArrowPathIcon className="animate-spin h-5 w-5 opacity-50" />
-                  </div>
-                  <div className="flex flex-col items-start leading-none">
-                     <span className="text-sm">Fetching Data...</span>
-                     <span className="text-[10px] opacity-80 mt-0.5">Please wait ({loadingProgress}%)</span>
-                  </div>
-                </div>
-              ) : (
-                <div className="flex items-center gap-3 relative z-10">
-                  <div className="bg-white/10 p-1.5 rounded-lg group-hover:bg-white/20 transition-colors duration-300">
-                     <ArrowPathIcon className="h-5 w-5 group-hover:rotate-180 transition-transform duration-700 ease-out" />
-                  </div>
-                  <div className="flex flex-col items-start leading-none text-left">
-                     <span>Update Market Data</span>
-                  </div>
-                </div>
-              )}
-            </Button>
-
-            {/* Export Actions Group */}
-            <div className="flex bg-slate-100 dark:bg-slate-800 p-1 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm shrink-0 transition-shadow hover:shadow-md duration-300">
-              <Button
-                onClick={handleDownloadExcel}
-                disabled={loading || filteredChartData.length === 0}
-                variant="ghost"
-                size="lg"
-                className="h-12 px-4 text-slate-600 hover:text-blue-700 hover:bg-white dark:hover:bg-slate-700 dark:text-slate-400 rounded-lg transition-all duration-300 ease-out active:scale-95 gsap-action-btn"
-                title="Export Excel"
-              >
-                <div className="flex flex-col items-center gap-1">
-                   <DocumentTextIcon className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
-                   <span className="text-[10px] font-medium hidden sm:block">Excel</span>
-                </div>
-              </Button>
-              <div className="w-px bg-slate-200 dark:bg-slate-700 my-2 mx-0.5" />
-              <Button
-                onClick={handleExportPNG}
-                disabled={loading || filteredChartData.length === 0}
-                variant="ghost"
-                size="lg"
-                className="h-12 px-4 text-slate-600 hover:text-purple-700 hover:bg-white dark:hover:bg-slate-700 dark:text-slate-400 rounded-lg transition-all duration-300 ease-out active:scale-95 gsap-action-btn"
-                title="Export PNG"
-              >
-                <div className="flex flex-col items-center gap-1">
-                   <PhotoIcon className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
-                   <span className="text-[10px] font-medium hidden sm:block">PNG</span>
-                </div>
-              </Button>
-              <div className="w-px bg-slate-200 dark:bg-slate-700 my-2 mx-0.5" />
-              <Button
-                onClick={handleCopyImage}
-                disabled={loading || filteredChartData.length === 0}
-                variant="ghost"
-                size="lg"
-                className="h-12 px-4 text-slate-600 hover:text-green-700 hover:bg-white dark:hover:bg-slate-700 dark:text-slate-400 rounded-lg transition-all duration-300 ease-out active:scale-95 gsap-action-btn"
-                title="Copy to Clipboard"
-              >
-                <div className="flex flex-col items-center gap-1">
-                   <ClipboardDocumentIcon className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
-                   <span className="text-[10px] font-medium hidden sm:block">Copy</span>
-                </div>
-              </Button>
-            </div>
-          </div>
+          <ActionButtons
+            loading={loading}
+            loadingProgress={loadingProgress}
+            hasData={filteredChartData.length > 0}
+            onFetchFresh={handleFetchFresh}
+            onDownloadExcel={handleDownloadExcel}
+            onExportPNG={handleExportPNG}
+            onCopyImage={handleCopyImage}
+          />
 
           {/* Loading Progress Bar */}
           {loading && (
@@ -819,203 +435,28 @@ export default function LMEDataFetcherRedux() {
           {showChart && (
             <div ref={chartRef} className="mt-4 border border-slate-200 dark:border-slate-700 rounded-xl p-4 bg-white dark:bg-slate-900 flex-1 flex flex-col min-h-0">
               <div className="flex flex-col lg:flex-row gap-6 lg:h-full h-auto">
-                {/* Left Sidebar - Explanation Panel */}
-                <div className="lg:w-64 shrink-0 order-first border-t lg:border-t-0 lg:border-r border-slate-200 dark:border-slate-700 pt-6 lg:pt-0 lg:pr-6">
-                  <div className="flex flex-col gap-6">
-
-                    {/* Mode Explanation */}
-                    <div className="space-y-3">
-                      <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-300">Display Modes</h4>
-                      <div className="space-y-2 text-xs text-slate-500 dark:text-slate-400">
-                        <div>
-                          <span className="font-medium text-slate-600 dark:text-slate-300">Absolute Price</span>
-                          <p>Shows actual USD prices. Metals use left axis ($/tonne), Oil uses right axis ($/barrel).</p>
-                        </div>
-                        <div>
-                          <span className="font-medium text-slate-600 dark:text-slate-300">Indexed (Base 100)</span>
-                          <p>Rebases all commodities to 100 at the start of the period. Useful for comparing relative performance and volatility.</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Interpretation Guide */}
-                    <div className="space-y-3">
-                      <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-300">How to Read</h4>
-                      <div className="space-y-2 text-xs text-slate-500 dark:text-slate-400">
-                        <p>• <span className="font-medium">Tooltip</span> shows absolute price and % change since period start.</p>
-                        <p>• <span className="font-medium">Correlation</span> values indicate how prices move together (-1 to +1).</p>
-                        <p>• Use <span className="font-medium">Range filters</span> to focus on specific timeframes.</p>
-                        <p>• <span className="font-medium">Brush slider</span> at bottom allows zooming into date ranges.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <ExplanationPanel />
 
                 {/* Right Content - Chart & Controls */}
                 <div className="flex-1 min-w-0 order-last flex flex-col min-h-0">
-                  {/* Chart Controls Toolbar */}
-                  <div className="mb-4 p-1.5 bg-slate-100/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-2xl flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-4 w-full backdrop-blur-sm shrink-0">
+                  <ChartToolbar
+                    displayMode={displayMode}
+                    setDisplayMode={setDisplayMode}
+                    showAnalytics={showAnalytics}
+                    setShowAnalytics={setShowAnalytics}
+                    dateFilter={dateFilter}
+                    setDateFilter={setDateFilter}
+                    dateRange={dateRange}
+                    setDateRange={setDateRange}
+                  />
 
-                    {/* Left Group: View Options */}
-                    <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 flex-1">
+                  {showAnalytics && <AnalyticsPanel correlations={correlations} />}
 
-                      {/* Display Mode Segmented Control */}
-                      <div className="bg-white dark:bg-slate-900 rounded-xl p-1 shadow-sm border border-slate-200 dark:border-slate-800 flex items-center justify-between sm:justify-start">
-                        <button
-                          onClick={() => setDisplayMode("absolute")}
-                          className={`flex-1 sm:flex-none px-4 py-2 text-xs font-semibold rounded-lg transition-all duration-300 ease-out cursor-pointer flex items-center justify-center gap-2 active:scale-95 ${
-                            displayMode === "absolute"
-                              ? "bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 shadow-inner scale-100"
-                              : "text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 hover:scale-105"
-                          }`}
-                        >
-                          <ArrowTrendingUpIcon className={`h-4 w-4 transition-colors duration-300 ${displayMode === "absolute" ? "text-blue-600 dark:text-blue-400" : ""}`} />
-                          <span>Absolute</span>
-                        </button>
-                        <div className="w-px h-4 bg-slate-200 dark:bg-slate-800 mx-1 hidden sm:block"></div>
-                        <button
-                          onClick={() => setDisplayMode("indexed")}
-                          className={`flex-1 sm:flex-none px-4 py-2 text-xs font-semibold rounded-lg transition-all duration-300 ease-out cursor-pointer flex items-center justify-center gap-2 active:scale-95 ${
-                            displayMode === "indexed"
-                              ? "bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 shadow-inner scale-100"
-                              : "text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 hover:scale-105"
-                          }`}
-                        >
-                          <ChartBarIcon className={`h-4 w-4 transition-colors duration-300 ${displayMode === "indexed" ? "text-purple-600 dark:text-purple-400" : ""}`} />
-                          <span>Indexed (100)</span>
-                        </button>
-                      </div>
-
-                      {/* Analytics Switch */}
-                      <Button
-                        variant={showAnalytics ? "secondary" : "ghost"}
-                        size="sm"
-                        onClick={() => setShowAnalytics(!showAnalytics)}
-                        className={cn(
-                          "h-[42px] px-4 rounded-xl border transition-all duration-300 ease-out active:scale-95 text-xs font-semibold",
-                          showAnalytics
-                            ? "bg-white dark:bg-slate-800 border-amber-200 dark:border-amber-900/50 text-amber-700 dark:text-amber-400 shadow-sm"
-                            : "border-transparent bg-transparent hover:bg-white/50 dark:hover:bg-slate-800/50 text-slate-500 hover:text-slate-700"
-                        )}
-                      >
-                         <PresentationChartLineIcon className={cn("h-4 w-4 mr-2 transition-colors duration-300", showAnalytics && "text-amber-500")} />
-                         Analytics
-                      </Button>
-                    </div>
-
-                    {/* Right Group: Date Filters */}
-                    <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 bg-white dark:bg-slate-900 p-1 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 transition-shadow hover:shadow-md duration-300">
-                       <Popover>
-                        <PopoverTrigger asChild>
-                          <Button
-                            id="date"
-                            variant={"ghost"}
-                            size="sm"
-                            className={cn(
-                              "justify-start text-left font-normal h-9 rounded-lg px-3 text-xs w-full sm:w-[220px] transition-all duration-300 ease-out active:scale-95",
-                              !dateRange && "text-muted-foreground",
-                              dateFilter === "Custom" && "bg-blue-50 text-blue-700 dark:bg-blue-900/20 dark:text-blue-400"
-                            )}
-                          >
-                            <CalendarIcon className="mr-2 h-3.5 w-3.5 opacity-70" />
-                            {dateRange?.from ? (
-                              dateRange.to ? (
-                                <span className="font-semibold">
-                                  {format(dateRange.from, "MMM d, yy")} - {format(dateRange.to, "MMM d, yy")}
-                                </span>
-                              ) : (
-                                <span className="font-semibold">{format(dateRange.from, "MMM d, yy")}</span>
-                              )
-                            ) : (
-                              <span className="text-slate-500">Select Date Range...</span>
-                            )}
-                          </Button>
-                        </PopoverTrigger>
-                        <PopoverContent className="w-auto p-0" align="end">
-                          <Calendar
-                            initialFocus
-                            mode="range"
-                            defaultMonth={dateRange?.from}
-                            selected={dateRange}
-                            onSelect={(range) => {
-                              setDateRange(range)
-                              if (range) setDateFilter("Custom")
-                            }}
-                            numberOfMonths={calendarMonths}
-                          />
-                        </PopoverContent>
-                      </Popover>
-
-                      <div className="h-4 w-px bg-slate-200 dark:bg-slate-800 hidden sm:block" />
-
-                      <div className="flex flex-wrap sm:flex-nowrap gap-1">
-                          {DATE_FILTERS.map((filter) => (
-                            <button
-                              key={filter.label}
-                              onClick={() => {
-                                setDateFilter(filter.label)
-                                setDateRange(undefined)
-                              }}
-                              className={`flex-1 sm:flex-none px-2.5 py-1.5 text-[10px] font-bold uppercase tracking-wider rounded-lg transition-all duration-300 ease-out cursor-pointer active:scale-95 ${
-                                dateFilter === filter.label
-                                  ? "bg-slate-800 text-white shadow-md transform scale-105"
-                                  : "text-slate-500 hover:text-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 dark:text-slate-400 hover:scale-105"
-                              }`}
-                            >
-                              {filter.label}
-                            </button>
-                          ))}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Analytics Panel */}
-                  {showAnalytics && (
-                    <div className="mb-6 p-4 bg-slate-50 dark:bg-slate-800/50 rounded-lg gsap-analytics-panel overflow-hidden">
-                      <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-3">
-                        30-Day Rolling Correlation
-                      </h4>
-                      <div className="grid grid-cols-3 gap-3">
-                        <CorrelationBadge label="Copper / Oil" value={correlations.copperOil} />
-                        <CorrelationBadge label="Zinc / Oil" value={correlations.zincOil} />
-                        <CorrelationBadge label="Copper / Zinc" value={correlations.copperZinc} />
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Legend - Interactive */}
-                  <div className="flex flex-wrap gap-6 mb-4">
-                    <div className="flex items-center gap-3">
-                      <span className="text-xs font-medium text-slate-500 uppercase tracking-wide">Metals</span>
-                      <button
-                        onClick={() => toggleSeries('copper')}
-                        className={`flex items-center gap-2 transition-all duration-300 ease-out active:scale-95 ${visibleSeries.copper ? 'opacity-100 scale-100' : 'opacity-40 grayscale hover:opacity-70 hover:scale-105'}`}
-                        title="Toggle Copper"
-                      >
-                        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: chartColors.copper }}></div>
-                        <span className="text-sm text-slate-600 dark:text-slate-400 font-medium">Copper</span>
-                      </button>
-                      <button
-                        onClick={() => toggleSeries('zinc')}
-                        className={`flex items-center gap-2 transition-all duration-300 ease-out active:scale-95 ${visibleSeries.zinc ? 'opacity-100 scale-100' : 'opacity-40 grayscale hover:opacity-70 hover:scale-105'}`}
-                        title="Toggle Zinc"
-                      >
-                        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: chartColors.zinc }}></div>
-                        <span className="text-sm text-slate-600 dark:text-slate-400 font-medium">Zinc</span>
-                      </button>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <span className="text-xs font-medium text-slate-500 uppercase tracking-wide">Energy</span>
-                      <button
-                        onClick={() => toggleSeries('oil')}
-                        className={`flex items-center gap-2 transition-all duration-300 ease-out active:scale-95 ${visibleSeries.oil ? 'opacity-100 scale-100' : 'opacity-40 grayscale hover:opacity-70 hover:scale-105'}`}
-                        title="Toggle Oil"
-                      >
-                        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: chartColors.oil }}></div>
-                        <span className="text-sm text-slate-600 dark:text-slate-400 font-medium">Oil (WTI)</span>
-                      </button>
-                    </div>
-                  </div>
+                  <ChartLegend
+                    visibleSeries={visibleSeries}
+                    chartColors={chartColors}
+                    onToggleSeries={toggleSeries}
+                  />
 
                   {/* Chart */}
                   {displayData.length > 0 ? (
@@ -1162,39 +603,11 @@ export default function LMEDataFetcherRedux() {
         </CardContent>
       </Card>
 
-      {/* Change Log Modal */}
-      {showChangeLog && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4 animate-in fade-in duration-200">
-           <div className="bg-white dark:bg-slate-900 rounded-xl shadow-2xl max-w-md w-full max-h-[80vh] flex flex-col overflow-hidden animate-in zoom-in-95 duration-200 border border-slate-200 dark:border-slate-800">
-              <div className="p-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between bg-slate-50/50 dark:bg-slate-800/50">
-                 <h3 className="font-semibold text-slate-800 dark:text-slate-100 flex items-center gap-2">
-                    <ClipboardDocumentIcon className="w-5 h-5 text-blue-600" />
-                    Data Update Log
-                 </h3>
-                 <button onClick={() => setShowChangeLog(false)} className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors">
-                    <XCircleIcon className="w-6 h-6" />
-                 </button>
-              </div>
-              <div className="p-4 overflow-y-auto flex-1 text-sm text-slate-600 dark:text-slate-300 space-y-2">
-                 {changeLog.length > 0 ? (
-                    changeLog.map((log, i) => (
-                       <div key={i} className="flex gap-2 items-start">
-                          <span className="text-blue-500 font-mono mt-1">•</span>
-                          <span>{log}</span>
-                       </div>
-                    ))
-                 ) : (
-                    <div className="text-center py-8 text-slate-400 italic">
-                       No significant data changes detected.
-                    </div>
-                 )}
-              </div>
-              <div className="p-4 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50 flex justify-end">
-                 <Button onClick={() => setShowChangeLog(false)}>Close</Button>
-              </div>
-           </div>
-        </div>
-      )}
+      <ChangeLogModal
+        isOpen={showChangeLog}
+        changeLog={changeLog}
+        onClose={() => setShowChangeLog(false)}
+      />
     </div>
   )
 }
