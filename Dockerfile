@@ -6,6 +6,7 @@ ARG NODE_ENV
 
 # Convert build args to environment variables
 ENV NODE_ENV=$NODE_ENV
+ENV HOSTNAME="0.0.0.0"
 
 WORKDIR /app
 
